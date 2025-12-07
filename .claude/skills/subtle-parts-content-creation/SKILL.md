@@ -99,6 +99,7 @@ Create Pinterest-optimized descriptions with search-friendly formatting.
 - Neutral and informative—not promotional
 - Concrete and specific—avoid vague descriptors
 - No emojis, exclamation points, or superlatives
+- **IMPORTANT**: Create unique variations for the same product shown in different shots. Even if the catalog ID is the same, vary the title, description, and keywords to highlight different aspects (e.g., materials vs. movement vs. styling) for Pinterest best practices
 
 **Keywords Guidelines:**
 - 8-12 relevant search terms in comma-separated format
@@ -106,6 +107,35 @@ Create Pinterest-optimized descriptions with search-friendly formatting.
 - Think like a shopper—what would they search?
 - Include: material names, design motifs, jewelry type, style categories
 - Order by relevance (most important first)
+- Use keywords from the approved SEO list below when natural and appropriate
+
+**Pinterest SEO-Optimized Keyword List:**
+
+Use these keywords naturally when they fit the product. Mix short-tail (high volume, broad reach) and long-tail (targeted, higher conversion) keywords.
+
+*High-Volume Keywords (from Pinterest Campaign Manager):*
+- boho fashion, boho summer outfits, boho style, boho chic, boho outfit, boho wedding, bohemian style, bohemian fashion
+- festival outfits, festival fashion
+- jewelry trends, jewelry lover, jewelry designers, jewelry aesthetic, jewelry unique, jewelry sets, jewelry love, jewelry and accessories, jewelry styled, jewelry for woman, jewelry bracelet, jewelry on sale
+- handmade jewelry, handmade jewellery, handmade necklace, handmade gift ideas, handcrafted, handcrafted jewelry
+- unique jewelry
+- style inspo, style summer, style trends, style outfits, style me pretty, style inspiration
+- organic modern
+- chic summer style, chic casual outfit, chic clothing, chic summer outfit, chic outfit ideas, chic outfits summer, chic summer outfits, chic fashion
+- statement piece, statement pieces
+- beach style, beach outfits, beach vacation outfits, beach aesthetic, beach vibes, beach fashion, beach outfit ideas, beach life, beach life aesthetic, beach lifestyle, beach look
+- tropical aesthetic, tropical outfit, tropical outfit ideas, tropics vacation outfits, tropical clothing, tropical fashion
+- gifts ideas, gifts for friends, gift for girlfriend, gift ideas for mom, gifts for mom, gift for mom, gift idea, gift ideas
+- copper jewelry
+
+*Short-Tail Keywords (High Volume):*
+- handmade jewelry, copper earrings, boho jewelry, tropical jewelry, artisan earrings, unique earrings, dangle earrings, jewelry gifts, handmade earrings
+
+*Long-Tail Keywords (Targeted, Higher Conversion):*
+- handmade copper earrings for women, tropical-inspired artisan jewelry, boho dangle earrings for everyday wear, copper jewelry for sensitive ears, lightweight handmade earrings for gifts, nature-inspired jewelry with tropical vibes, handmade jewelry gift ideas for her, small batch artisan jewelry, unique earrings for boho fashion lovers, best handmade copper earrings on Etsy
+
+*Niche & Trend-Specific Keywords:*
+- sustainable handmade jewelry, eco-friendly copper earrings, boho fashion accessories, jewelry for beach lovers, tropical wedding jewelry, minimalist handmade earrings, island-inspired jewelry gifts, statement earrings for summer, handmade jewelry under $50, ethical artisan jewelry gifts
 
 ### 3. Instagram/Facebook Posts
 
@@ -168,9 +198,29 @@ After generating content, ask to save it to the appropriate Notion database for 
 For **Instagram/Facebook posts**, create a page in the Social Media Content Calendar with:
 - **Properties:**
   - `Name`: First few words of caption or product name
-  - `Format`: "post"
+  - `Format`:
+    - "carousel" if more than 1 image
+    - "post" if just 1 image
+    - "reel" if user specifies it's a reel
   - `Status`: "In progress"
-  - `Publish Date`: Leave empty or set to user's preference
+  - `Publish Date`: Default to today's date unless user specifies otherwise
+  - `Content Type`: Select the most appropriate based on the content:
+    - "Romance the Product" - Product-focused posts highlighting beauty and details
+    - "Behind the Scenes/Day in the Life" - Studio, process, or maker content
+    - "Quick Tip" - Brief styling or care tips
+    - "Inspiration Moment" - Mood, aesthetic, or inspiration-driven
+    - "Design Storytelling" - Story behind the design or creation
+    - "Customer Showcase" - Customer photos or testimonials
+    - "Tropical Lifestyle Memes" - Miami/tropical lifestyle content
+    - "New Product Sneak Peak" - Previews of upcoming products
+    - "Educational Post/ FAQ" - Jewelry education or answering questions
+    - "Artist Reflections" - Personal reflections from the maker
+    - "Seasonal" - Holiday or seasonal content
+  - `Pillar`: Select one or more that apply (multi-select):
+    - "Product Showcase" - Highlighting products
+    - "Behind-the-Scenes" - Process, studio, maker content
+    - "Nature Inspired - Tropical Lifestyle" - Tropical, Miami, nature themes
+    - "Jewelry Education & Styling Tips" - Educational or styling content
 - **Content:** Full caption with CTA and hashtags
 
 For **Product Descriptions**, create a page in the Subtle Parts Inventory with:
@@ -184,9 +234,35 @@ For **Product Descriptions**, create a page in the Subtle Parts Inventory with:
 - **Content:** Include the full product description
 
 For **Pinterest Pins**, create a page in the Pinterest Posts database with:
-- **Properties:**
-  - `Name`: Use the Pinterest title
-- **Content:** Include the description and comma-separated keywords
+
+**IMPORTANT: Pinterest Pin Workflow with Inventory Linking**
+
+1. **Extract catalog ID from filename** - The image filename follows the format `[CATALOG-ID].png` (e.g., `E-BC-003-BEA-PLGR-M.png` where `E-BC-003-BEA-PLGR-M` is the catalog ID/SKU). The catalog ID format is: `[CATEGORY]-[MATERIAL]-[DESIGN CODE]-[STYLE]-[COLOR]-[SIZE]`
+2. **Determine Board from catalog ID prefix**:
+   - **E-** (Earrings) → Board: "Earrings"
+   - **N-** (Necklace) → Board: "Necklaces"
+   - **B-** (Bracelet) → Board: "Bracelets"
+   - If prefix doesn't match E-, N-, or B-, ask the user what the Board should be
+3. **Generate content** - Create the Pinterest pin title, description, and keywords. IMPORTANT: Always create unique variations even for the same catalog ID/product—vary the angle, focus, and keywords to highlight different aspects (materials, styling, movement, etc.) for Pinterest best practices
+4. **Display content first** - Show the complete Pinterest pin content to the user for review BEFORE adding to Notion
+5. **Ask to save** - Ask: "Would you like me to save this to Notion?"
+6. **Look up inventory** - Search the Subtle Parts Inventory database (data source: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`) for the catalog ID to find the matching inventory item
+7. **Find Shopify product URL** - Search for the product matching the catalog ID/SKU in the product variant data by checking multiple collection feeds:
+   - First, search `https://thesubtleparts.com/collections/new-arrivals/products.json` (with pagination if needed: `?page=1`, `?page=2`, etc.)
+   - If not found, search `https://thesubtleparts.com/collections/all/products.json` (with pagination if needed)
+   - The SKU is found in `variants[].sku` for each product
+   - If found, extract the product handle to create the destination URL: `https://thesubtleparts.com/products/[handle]`
+   - **IMPORTANT**: If no match is found in either collection feed, leave the Destination link field blank and inform the user that the product wasn't found in Shopify (it may be unpublished or not assigned to these collections). Never construct or guess URLs.
+8. **Create Pinterest pin page** with properties:
+   - `Title`: Use the Pinterest title
+   - `Text`: Include the description and comma-separated keywords
+   - `Board`: Determined by the catalog ID prefix (E- → "Earrings", N- → "Necklaces", B- → "Bracelets"). If prefix doesn't match, ask user
+   - `Inventory`: The URL of the matching inventory item (relation field)
+   - `Destination link`: The Shopify product URL (e.g., `https://thesubtleparts.com/products/black-crystal-fringe-bar-necklace`)
+   - `date:Date:start`: Today's date in YYYY-MM-DD format (CRITICAL - required for filtered views)
+   - `date:Date:is_datetime`: 0
+   - **Note**: Leave `Catalog ID` field blank (do not populate)
+9. **Confirm and provide link** to the created Notion page
 
 **Workflow:**
 1. Generate content as requested
@@ -208,6 +284,15 @@ When user provides an image or description of jewelry:
    - Instagram/Facebook posts → Social Media Content Calendar (data source: `collection://5f62fb21-4d92-4d54-b03d-fb9f69d89b9f`)
    - Product descriptions → Subtle Parts Inventory (data source: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`)
    - Pinterest pins → Pinterest Posts database (data source: `collection://18d6a740-4245-807f-82f5-000bb3fae46a`)
+     - Extract catalog ID from filename
+     - Determine Board from catalog ID prefix (E- → "Earrings", N- → "Necklaces", B- → "Bracelets"). If no match, ask user
+     - Search Inventory database for matching item
+     - Fetch Shopify products to find matching product URL
+     - Link inventory item in "Inventory" relation field
+     - Add Shopify product URL to "Destination link" field
+     - Set "Board" field based on catalog ID prefix
+     - Add today's date to "Date" field
+     - Leave "Catalog ID" field blank (do not populate)
 8. **Confirm and provide link** to the created Notion page
 
 If generating multiple content types for the same piece, ensure consistency in how materials and aesthetics are described across all formats.
