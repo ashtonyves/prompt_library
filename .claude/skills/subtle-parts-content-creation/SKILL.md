@@ -21,6 +21,8 @@ This skill creates product descriptions, Pinterest pins, and Instagram/Facebook 
 
 Never use: "full of movement," "moves with you," "elevate your style," "timeless elegance," "perfect for any occasion," "add a touch of," "statement-making," or overly poetic sales language.
 
+**Avoid repetitive opening patterns** in Instagram captions: Don't overuse constructions like "There's something about..." or "It comes alive in..." Vary your sentence structures and opening approaches to keep content fresh and authentic.
+
 ## Content Types
 
 ### 1. Product Writeups (Shopify + Etsy)
@@ -155,11 +157,12 @@ Get 15% off your first order when you sign up for emails (link in bio)
 
 **Caption Guidelines:**
 - Keep it short and punchy (2-3 sentences max)
-- Opening line: evocative but grounded (e.g., "It comes alive in contrast," "There's something about hibiscus blooms")
+- Opening line: evocative but grounded—vary your approach. Lead with a direct statement, sensory detail, historical context, or material focus. **AVOID repetitive patterns** like "There's something about..." or "It comes alive in..." Use diverse sentence structures.
 - Middle: concrete product details—materials, texture, aesthetic
 - Optional: emotional/sensory context or inspiration behind the piece
 - Optional casual sign-off: "What do you think?" "Happy weekend, handmade lovers ⭐"
 - Natural, conversational tone
+- **Vary opening structures** across different posts—don't rely on the same patterns repeatedly
 
 **CTA Structure (always include):**
 ```
@@ -170,10 +173,19 @@ Get 15% off your first order when you sign up for emails (link in bio)
 ```
 
 **Hashtag Guidelines:**
-- 15-20 hashtags
-- Mix of: materials (#CopperJewelry), style (#BohoChic, #ModernCoastal), audience (#JewelryArtist, #SmallBusinessOwner), location (#MadeInMiami, #TropicalJewelry), process (#HandmadeJewelry, #ArtisanJewelry), platform tags (#InstaSmithy, #JewelryGram)
+- Use **no more than 10 hashtags** per post
+- Mix general and niche hashtags for reach and targeting
 - All hashtags should be CamelCase for readability
-- Examples: #FallJewelry #ModernMystic #WitchyStyle #ContemporaryJewelry #HandForgedJewelry #HandmadeJewelry #CopperJewelry #MadeInMiami #TropicalJewelry #ArtisanJewelry #SmallBusinessOwner #InstaSmithy #LadySmith #MetalSmith #RioJeweler #SlowFashion #ModernCoastal #CoastalJewelry #JewelryArtist #JewelryMaker #JewelryDesigner #ShopSmall #JewelryGram #BohoChic #BohoJewelry
+- Select from the **Primary Hashtags** list below when appropriate, choosing the most relevant for each piece
+- Add product-specific or seasonal hashtags as needed (e.g., #ModernMystic, #WitchyStyle, #SummerJewelry, #FallJewelry)
+
+**Primary Hashtags (preferred values - select most relevant):**
+#SummerStyle #SummerJewelry #HandmadeJewelry #CopperJewelry #MadeInMiami #TropicalJewelry #ArtisanJewelry #SmallBusinessOwner #InstaSmithy #LadySmith #MetalSmith #RioJeweler #SlowFashion #ModernCoastal #CoastalJewelry #JewelryArtist #JewelryMaker #JewelryDesigner #ShopSmall #JewelryGram #BohoChic #BohoJewelry
+
+**Additional hashtags for specific contexts:**
+- Seasonal: #FallJewelry #WinterStyle #SpringFashion
+- Style/Aesthetic: #ModernMystic #WitchyStyle #ContemporaryJewelry #HandForgedJewelry
+- Mix of: materials, style, audience, location, process, and platform-specific tags
 
 ## Saving to Notion
 
