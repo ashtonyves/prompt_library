@@ -54,19 +54,55 @@ keyword two
 - Example: Hammered Copper Crescent Moon Earrings - Lightweight Dangles
 
 **Etsy Title Guidelines:**
-- Purpose: Fully SEO-optimized for Etsy's algorithm
-- Format: Front-load primary keywords, max out character space
+- Purpose: Fully SEO-optimized for Etsy's algorithm with focus keyword strategy
 - Character limit: 140 characters maximum
-- Do NOT use "Gift for Her"
-- Example: Hammered Copper Earrings, Crescent Moon Dangle Earrings, Boho Statement Jewelry, Handmade Artisan Earrings
+- Format: [Focus Keyword], [Secondary Keywords], [Additional Descriptors]
+
+**Focus Keyword (MUST lead title):**
+- Definition: A 3-5 word long-tail phrase combining what the product is + key features
+- Formula: [Handmade/Primary Technique] + [Material] + [Key Feature/Shape] + [Product Type]
+  OR: [Material] + [Key Feature] + [Product Type] + [Primary Style]
+- Examples: "Handmade Copper Crescent Moon Earrings", "Wire Wrapped Labradorite Crystal Necklace", "Hammered Silver Geometric Hoop Earrings"
+
+**Title Requirements:**
+✅ Lead with 3-5 word focus keyword representing buyer search intent
+✅ Use commas to separate keyword phrases
+✅ Include material, color, or size attributes
+✅ Keep under 15 words total
+✅ Include key descriptors (material, technique, style)
+❌ NO repeated words anywhere in title (scan entire title - including synonyms like boho/bohemian)
+❌ NO subjective words: beautiful, perfect, stunning, gorgeous, elegant
+❌ NO gifting terms in title: "gift for her", "birthday gift" (these go in tags/description only)
+❌ NO sale/shipping terms: "free shipping", "on sale"
+
+**Complete Title Example:**
+"Handmade Copper Moon Earrings, Hammered Boho Dangle, Lightweight Festival Jewelry"
+- Focus keyword: "Handmade Copper Moon Earrings" (front-loaded)
+- Secondary: "Hammered Boho Dangle"
+- Additional: "Lightweight Festival Jewelry"
 
 **Product Description Guidelines:**
 - Write 2-3 short, punchy sentences
+- **CRITICAL: Focus keyword (exact phrase from title start) MUST appear in the first 160 characters**
 - **CRITICAL: First sentence must be a complete sentence, not a fragment** - it should read naturally as a human would speak
+- After first mention of focus keyword, use synonym variations (e.g., "hand-hammered" instead of repeating "hammered")
 - Include: materials (specific), shape/texture, aesthetic/era reference, key wearing details if relevant
 - Describe only what you see—no assumptions
-- Stay grounded, avoid trite phrases
+- Stay grounded, avoid trite phrases from brand voice doc
+- Minimum 160+ total characters
 - Make it easy to visualize
+
+**Description Structure:**
+1. Sentence 1 (under 160 chars): Include focus keyword + primary material/feature description
+2. Sentence 2: Aesthetic/style context (can use variations/synonyms)
+3. Sentence 3: Wearing details, size, or additional features (use different vocabulary)
+
+**Description Example:**
+Title: "Handmade Copper Moon Earrings, Hammered Boho Dangle, Lightweight Festival Jewelry"
+Description: "These handmade copper moon earrings feature a hand-hammered texture that catches light beautifully. The crescent shapes bring 70s festival energy with a contemporary artisan edge. Lightweight dangles on simple wire hooks make them easy to wear all day."
+✅ "handmade copper moon earrings" in first sentence (under 160 chars)
+✅ Uses variations after: "hand-hammered" instead of repeating "hammered"
+✅ Adds details not in title: "catches light", "crescent shapes", "wire hooks"
 
 **SEO Keywords Guidelines:**
 - Etsy allows up to 13 tags, each with a maximum of 20 characters
@@ -77,6 +113,28 @@ keyword two
 - Include: material-based, style-based, occasion/gift, audience-focused terms
 - Use all 13 tags for maximum SEO benefit
 - Don't worry about plurals—Etsy matches singular/plural automatically
+
+**VALIDATION CHECKLIST (Apply Before Outputting Product Descriptions):**
+
+Before generating the final output, verify all requirements are met:
+
+**Etsy Title Check:**
+- [ ] Focus keyword (3-5 word phrase) is first in title
+- [ ] No repeated words anywhere in title (including synonyms like boho/bohemian)
+- [ ] Includes material/color/size attributes
+- [ ] Under 15 words total
+- [ ] No subjective promotional language (beautiful, perfect, stunning, gorgeous, elegant)
+- [ ] No gifting terms (gift for her, birthday gift, etc.)
+- [ ] No sale/delivery terms (free shipping, on sale, etc.)
+
+**Product Description Check:**
+- [ ] Focus keyword appears in first 160 characters
+- [ ] Uses different phrasing/synonyms after first mention
+- [ ] Total length 160+ characters
+- [ ] Avoids trite brand voice phrases
+- [ ] First sentence is complete and natural
+
+**If any check fails, revise before presenting to user.**
 
 ### 2. Pinterest Pins
 
