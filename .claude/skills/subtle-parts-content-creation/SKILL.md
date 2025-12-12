@@ -62,15 +62,21 @@ keyword two
 
 **Product Description Guidelines:**
 - Write 2-3 short, punchy sentences
+- **CRITICAL: First sentence must be a complete sentence, not a fragment** - it should read naturally as a human would speak
 - Include: materials (specific), shape/texture, aesthetic/era reference, key wearing details if relevant
 - Describe only what you see—no assumptions
 - Stay grounded, avoid trite phrases
 - Make it easy to visualize
 
 **SEO Keywords Guidelines:**
-- List 10-15 keywords/phrases on separate lines (no bullets, no commas)
-- Mix short-tail (copper earrings, boho jewelry) and long-tail (hammered copper crescent moon earrings)
+- Etsy allows up to 13 tags, each with a maximum of 20 characters
+- List 13 keyword phrases on separate lines (no bullets, no commas)
+- **Each keyword must be 20 characters or less** to fit Etsy's tag character limit
+- Prioritize popular shopper search terms (e.g., "copper earrings," "boho jewelry," "handmade gifts")
+- Mix short-tail (copper earrings, boho jewelry) and multi-word phrases (hammered copper, wire wrapped, gift for her)
 - Include: material-based, style-based, occasion/gift, audience-focused terms
+- Use all 13 tags for maximum SEO benefit
+- Don't worry about plurals—Etsy matches singular/plural automatically
 
 ### 2. Pinterest Pins
 
@@ -243,7 +249,36 @@ For **Product Descriptions**, create a page in the Subtle Parts Inventory with:
   - `SEO keywords`: The keyword list (as plain text)
   - `Shopify`: "Not listed"
   - `Etsy Status`: "Not started"
-- **Content:** Include the full product description
+- **Content:** Include the full product description, followed by the standard formatted sections below
+
+**Standard Product Description Format for Notion:**
+
+When saving product descriptions to Notion, always append this formatted content after the main 2-3 sentence description:
+
+```
+📐 SIZING:
+[Customize based on product type - see rules below]
+
+✨ MATERIALS:
+Every item is 100% handmade and one-of-a-kind. Since gemstones are unique, a slight variation from the colors pictured should be expected.
+
+🙏🏼 CARE:
+Natural copper is a pure elemental metal, known for its rich warmth and evolving character. Over time, it develops a natural patina, especially in humid environments or with frequent handling. To restore its original shine, simply polish with a soft cloth. For the longest-lasting luster, avoid exposing your copper jewelry to water, soaps, and oils, such as in showers or swimming.
+
+🎁 GIFT OCCASIONS:
+Whether you're celebrating a birthday, anniversary, or simply looking for a thoughtful gift, this bohemian-inspired piece is ideal. Perfect for free-spirited individuals who appreciate unique, handmade treasures. All purchases from this shop arrive nicely packed in a box suitable for gifting.
+
+☀️🌴⛱️🤍
+I design and make all jewelry in Miami by hand with simple tools and intentionally sourced materials. Thanks for supporting this small business!
+```
+
+**IMPORTANT:** The SIZING section must be customized based on the specific product:
+- For **earrings**: "Drop length is X inches, width is X inches."
+- For **necklaces**: "Total length is X inches." 
+- If the necklace includes a pendant, also include: "Pendant height is X inches, width is X inches."
+- For **bracelets**: "Total length around is X inches."
+- Always ask the user for specific measurements if not provided
+- If not specified, always ask the user if custom sizing is available. If so append the line at the bottom of the section "Custom sizes are available upon request."
 
 For **Pinterest Pins**, create a page in the Pinterest Posts database with:
 
@@ -286,13 +321,18 @@ For **Pinterest Pins**, create a page in the Pinterest Posts database with:
 
 When user provides an image or description of jewelry:
 
-1. **Ask for clarification if needed** - materials, measurements, or features that aren't clear
-2. **Determine output type** - which content format(s) does the user need?
-3. **Generate content** following the exact format specified for each type
-4. **Maintain brand voice** - grounded, warm, specific, avoiding trite phrases
-5. **Be accurate** - describe only what you see, don't assume or embellish
-6. **Ask about Notion**: "Would you like me to save this to Notion?"
-7. **If yes, save to appropriate database**:
+1. **Extract the product SKU** - The user will typically provide a folder containing product images. The folder name IS the product SKU (e.g., `E-C-136-DEC-NU-L`)
+2. **Ask for clarification if needed** - materials, measurements, or features that aren't clear
+3. **Determine output type** - which content format(s) does the user need?
+4. **Generate content** following the exact format specified for each type
+5. **Maintain brand voice** - grounded, warm, specific, avoiding trite phrases
+6. **Be accurate** - describe only what you see, don't assume or embellish
+7. **Ask about Notion**: "Would you like me to save this to Notion?"
+8. **If yes, check if product exists first**:
+   - Search the Subtle Parts Inventory database (use `mcp__notion__notion-search` with the SKU) to see if a page with this SKU already exists
+   - If found: Update the existing page with the new content
+   - If not found: **Always ask the user before creating a new page** - "I couldn't find an existing product with SKU [SKU]. Would you like me to create a new page in the inventory?"
+9. **Save to appropriate database**:
    - Instagram/Facebook posts → Social Media Content Calendar (data source: `collection://5f62fb21-4d92-4d54-b03d-fb9f69d89b9f`)
    - Product descriptions → Subtle Parts Inventory (data source: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`)
    - Pinterest pins → Pinterest Posts database (data source: `collection://18d6a740-4245-807f-82f5-000bb3fae46a`)
@@ -305,6 +345,6 @@ When user provides an image or description of jewelry:
      - Set "Board" field based on catalog ID prefix
      - Add today's date to "Date" field
      - Leave "Catalog ID" field blank (do not populate)
-8. **Confirm and provide link** to the created Notion page
+10. **Confirm and provide link** to the created Notion page
 
 If generating multiple content types for the same piece, ensure consistency in how materials and aesthetics are described across all formats.
