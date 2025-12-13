@@ -70,8 +70,15 @@ keyword two
 ✅ Include material, color, or size attributes
 ✅ Keep under 15 words total
 ✅ Include key descriptors (material, technique, style)
-❌ NO repeated words anywhere in title (scan entire title - including synonyms like boho/bohemian)
-❌ NO subjective words: beautiful, perfect, stunning, gorgeous, elegant
+✅ Aim for 100-130 characters of meaningful keywords rather than stuffing to hit exactly 140 - quality keywords > maximum length
+✅ Natural flow - even with SEO optimization, the title should read naturally when spoken aloud
+✅ Proper capitalization - Use title case (capitalize first letter of major words). Never use all lowercase
+❌ NO repeated words anywhere in title - don't repeat the product type (earrings, necklace, bracelet) multiple times. Use it once and find alternative descriptors (drops, dangles, pieces, jewelry) for subsequent references
+❌ NO repeated words including synonyms (scan entire title - boho/bohemian count as repetition)
+❌ NO unnecessary qualifiers: Avoid "for Women," "for Her," or similar phrases - jewelry context makes the audience implicit and these waste valuable character space
+❌ NO subjective words: beautiful, perfect, stunning, gorgeous, elegant, statement
+  - "Statement" is subjective like "beautiful"—save it for tags/descriptions where search still picks it up
+  - Instead use specific descriptors: "Bold Gold Chunky Ring" not "Statement Ring"
 ❌ NO gifting terms in title: "gift for her", "birthday gift" (these go in tags/description only)
 ❌ NO sale/shipping terms: "free shipping", "on sale"
 
@@ -80,6 +87,38 @@ keyword two
 - Focus keyword: "Handmade Copper Moon Earrings" (front-loaded)
 - Secondary: "Hammered Boho Dangle"
 - Additional: "Lightweight Festival Jewelry"
+- ✅ "Earrings" appears only once (not repeated as "dangles earrings" or similar)
+- ✅ Uses alternative descriptors: "Dangle" and "Jewelry" instead of repeating "Earrings"
+
+**Before/After Examples showing key improvements:**
+
+❌ Example 1: "Hammered copper drop earrings with hematite dangle, industrial chic jewelry, boho rustic earrings, mixed metal jewelry"
+- Repeats "earrings" 2 times
+- "mixed metal jewelry" is factually incorrect
+- "industrial chic jewelry" is generic keyword stuffing
+- 126 characters
+
+✅ After: "Hammered Copper Hematite Earrings, Long Dangle Drops, Handmade Wire Wrapped Boho Jewelry"
+- "Earrings" appears only once
+- Uses alternative descriptors: "Drops," "Jewelry"
+- All keywords are accurate and meaningful
+- No subjective words like "statement"
+- Proper capitalization
+- 89 characters - quality over stuffing
+
+❌ Example 2: "handmade copper heart earrings with light blue stone dangle, eros earrings, love earrings, heart shaped jewelry, blue hearts"
+- All lowercase - unprofessional
+- Repeats "heart" 4 times and "earrings" 3 times
+- "eros earrings, love earrings" are vague, not searchable
+- 127 characters
+
+✅ After: "Wire Wrapped Copper Heart Earrings, Blue Quartz Dangle Drops, Handmade Scalloped Detail Jewelry, Boho Artisan Gemstone Hoops"
+- Proper capitalization (title case)
+- "Heart" appears only once, "Earrings" appears only once
+- Uses alternative descriptors: "Drops," "Jewelry," "Hoops"
+- Specific gemstone name "Blue Quartz" instead of "light blue stone"
+- Added unique feature "Scalloped Detail"
+- 130 characters
 
 **Product Description Guidelines:**
 - Write 2-3 short, punchy sentences
@@ -120,10 +159,15 @@ Before generating the final output, verify all requirements are met:
 
 **Etsy Title Check:**
 - [ ] Focus keyword (3-5 word phrase) is first in title
-- [ ] No repeated words anywhere in title (including synonyms like boho/bohemian)
+- [ ] Proper capitalization - title case used (NOT all lowercase)
+- [ ] No repeated words anywhere in title - product type (earrings, necklace, bracelet) appears only once
+- [ ] No repeated words including synonyms (boho/bohemian count as repetition)
+- [ ] No unnecessary qualifiers ("for Women," "for Her," etc.)
 - [ ] Includes material/color/size attributes
 - [ ] Under 15 words total
-- [ ] No subjective promotional language (beautiful, perfect, stunning, gorgeous, elegant)
+- [ ] Aim for 100-130 characters of meaningful keywords (not necessarily maxing out 140)
+- [ ] Reads naturally when spoken aloud
+- [ ] No subjective promotional language (beautiful, perfect, stunning, gorgeous, elegant, statement)
 - [ ] No gifting terms (gift for her, birthday gift, etc.)
 - [ ] No sale/delivery terms (free shipping, on sale, etc.)
 
