@@ -5,7 +5,7 @@ description: Content creation system for The Subtle Parts handmade jewelry busin
 
 # The Subtle Parts Content Creation System
 
-This skill creates product descriptions, Pinterest pins, and Instagram/Facebook posts for The Subtle Parts handmade jewelry business with consistent brand voice across all platforms, and saves them to Notion for organization and tracking.
+Creates product descriptions, Pinterest pins, and Instagram/Facebook posts with consistent brand voice across all platforms, and saves them to Notion.
 
 ## Brand Context
 
@@ -15,22 +15,19 @@ This skill creates product descriptions, Pinterest pins, and Instagram/Facebook 
 
 **Aesthetic References**: 70s festival meets contemporary artisan, minimal modernist, art deco inspired, 90s grunge elegance, southwestern modern, organic bohemian, industrial chic, vintage-inspired contemporary.
 
-**Target Audience**: Modern contemporary women with eclectic style who value handmade, ethical, artisan-made jewelry. They want unique pieces that reflect personality and appreciate both affordable quality and sustainable practices.
+**Target Audience**: Modern contemporary women with eclectic style who value handmade, ethical, artisan-made jewelry.
 
-### Language to Avoid (Trite Phrases)
+### Language to Avoid
 
 Never use: "full of movement," "moves with you," "elevate your style," "timeless elegance," "perfect for any occasion," "add a touch of," "statement-making," or overly poetic sales language.
 
-**Avoid repetitive opening patterns** in Instagram captions: Don't overuse constructions like "There's something about..." or "It comes alive in..." Vary your sentence structures and opening approaches to keep content fresh and authentic.
+Avoid repetitive opening patterns in Instagram captions (e.g., "There's something about..." or "It comes alive in..."). Vary sentence structures.
 
 ## Content Types
 
 ### 1. Product Writeups (Shopify + Etsy)
 
-Generate complete product listings with SEO optimization for both platforms.
-
 **Output Format:**
-
 ```
 ## SHOPIFY TITLE
 [Title here]
@@ -47,145 +44,76 @@ keyword two
 [etc.]
 ```
 
-**Shopify Title Guidelines:**
-- Purpose: Clear, searchable, inventory-friendly
+**Shopify Title:**
 - Format: [Material] [Style/Shape] [Type] - [Distinctive Feature]
-- Character limit: 70 characters (optimal for Google)
+- Max 70 characters (optimal for Google)
 - Example: Hammered Copper Crescent Moon Earrings - Lightweight Dangles
 
-**Etsy Title Guidelines:**
-- Purpose: Fully SEO-optimized for Etsy's algorithm with focus keyword strategy
-- Character limit: 140 characters maximum
+**Etsy Title (140 char max):**
+- Lead with 3-5 word focus keyword: [Handmade/Technique] + [Material] + [Feature] + [Product Type]
 - Format: [Focus Keyword], [Secondary Keywords], [Additional Descriptors]
+- Example: "Handmade Copper Moon Earrings, Hammered Boho Dangle, Lightweight Festival Jewelry"
 
-**Focus Keyword (MUST lead title):**
-- Definition: A 3-5 word long-tail phrase combining what the product is + key features
-- Formula: [Handmade/Primary Technique] + [Material] + [Key Feature/Shape] + [Product Type]
-  OR: [Material] + [Key Feature] + [Product Type] + [Primary Style]
-- Examples: "Handmade Copper Crescent Moon Earrings", "Wire Wrapped Labradorite Crystal Necklace", "Hammered Silver Geometric Hoop Earrings"
+**Requirements:**
+✅ Focus keyword first (3-5 words)
+✅ Use commas to separate phrases
+✅ Material, color, or size attributes included
+✅ Under 15 words total
+✅ 100-130 characters of meaningful keywords (quality > max length)
+✅ Proper title case capitalization
+✅ Natural flow when spoken aloud
+❌ NO repeated words (earrings, necklace, bracelet appears only once - use alternatives like drops, dangles, pieces, jewelry)
+❌ NO repeated synonyms (boho/bohemian count as repetition)
+❌ NO unnecessary qualifiers ("for Women," "for Her")
+❌ NO subjective words (beautiful, perfect, stunning, gorgeous, elegant, statement)
+❌ NO gifting terms in title (gift for her, birthday gift)
+❌ NO sale/shipping terms (free shipping, on sale)
 
-**Title Requirements:**
-✅ Lead with 3-5 word focus keyword representing buyer search intent
-✅ Use commas to separate keyword phrases
-✅ Include material, color, or size attributes
-✅ Keep under 15 words total
-✅ Include key descriptors (material, technique, style)
-✅ Aim for 100-130 characters of meaningful keywords rather than stuffing to hit exactly 140 - quality keywords > maximum length
-✅ Natural flow - even with SEO optimization, the title should read naturally when spoken aloud
-✅ Proper capitalization - Use title case (capitalize first letter of major words). Never use all lowercase
-❌ NO repeated words anywhere in title - don't repeat the product type (earrings, necklace, bracelet) multiple times. Use it once and find alternative descriptors (drops, dangles, pieces, jewelry) for subsequent references
-❌ NO repeated words including synonyms (scan entire title - boho/bohemian count as repetition)
-❌ NO unnecessary qualifiers: Avoid "for Women," "for Her," or similar phrases - jewelry context makes the audience implicit and these waste valuable character space
-❌ NO subjective words: beautiful, perfect, stunning, gorgeous, elegant, statement
-  - "Statement" is subjective like "beautiful"—save it for tags/descriptions where search still picks it up
-  - Instead use specific descriptors: "Bold Gold Chunky Ring" not "Statement Ring"
-❌ NO gifting terms in title: "gift for her", "birthday gift" (these go in tags/description only)
-❌ NO sale/shipping terms: "free shipping", "on sale"
+**Before/After Example:**
 
-**Complete Title Example:**
-"Handmade Copper Moon Earrings, Hammered Boho Dangle, Lightweight Festival Jewelry"
-- Focus keyword: "Handmade Copper Moon Earrings" (front-loaded)
-- Secondary: "Hammered Boho Dangle"
-- Additional: "Lightweight Festival Jewelry"
-- ✅ "Earrings" appears only once (not repeated as "dangles earrings" or similar)
-- ✅ Uses alternative descriptors: "Dangle" and "Jewelry" instead of repeating "Earrings"
+❌ "hammered copper heart earrings with light blue stone dangle, eros earrings, love earrings, heart shaped jewelry, blue hearts"
+- All lowercase, repeats "heart" 4× and "earrings" 3×, vague terms
 
-**Before/After Examples showing key improvements:**
+✅ "Wire Wrapped Copper Heart Earrings, Blue Quartz Dangle Drops, Handmade Scalloped Detail Jewelry"
+- Proper capitalization, "Heart" once, "Earrings" once, specific gemstone name, unique feature
 
-❌ Example 1: "Hammered copper drop earrings with hematite dangle, industrial chic jewelry, boho rustic earrings, mixed metal jewelry"
-- Repeats "earrings" 2 times
-- "mixed metal jewelry" is factually incorrect
-- "industrial chic jewelry" is generic keyword stuffing
-- 126 characters
-
-✅ After: "Hammered Copper Hematite Earrings, Long Dangle Drops, Handmade Wire Wrapped Boho Jewelry"
-- "Earrings" appears only once
-- Uses alternative descriptors: "Drops," "Jewelry"
-- All keywords are accurate and meaningful
-- No subjective words like "statement"
-- Proper capitalization
-- 89 characters - quality over stuffing
-
-❌ Example 2: "handmade copper heart earrings with light blue stone dangle, eros earrings, love earrings, heart shaped jewelry, blue hearts"
-- All lowercase - unprofessional
-- Repeats "heart" 4 times and "earrings" 3 times
-- "eros earrings, love earrings" are vague, not searchable
-- 127 characters
-
-✅ After: "Wire Wrapped Copper Heart Earrings, Blue Quartz Dangle Drops, Handmade Scalloped Detail Jewelry, Boho Artisan Gemstone Hoops"
-- Proper capitalization (title case)
-- "Heart" appears only once, "Earrings" appears only once
-- Uses alternative descriptors: "Drops," "Jewelry," "Hoops"
-- Specific gemstone name "Blue Quartz" instead of "light blue stone"
-- Added unique feature "Scalloped Detail"
-- 130 characters
-
-**Product Description Guidelines:**
-- Write 2-3 short, punchy sentences
-- **CRITICAL: Focus keyword (exact phrase from title start) MUST appear in the first 160 characters**
-- **CRITICAL: First sentence must be a complete sentence, not a fragment** - it should read naturally as a human would speak
-- After first mention of focus keyword, use synonym variations (e.g., "hand-hammered" instead of repeating "hammered")
-- Include: materials (specific), shape/texture, aesthetic/era reference, key wearing details if relevant
-- Describe only what you see—no assumptions
-- Stay grounded, avoid trite phrases from brand voice doc
+**Product Description:**
+- 2-3 short, punchy sentences
+- **Focus keyword (exact phrase from title) MUST appear in first 160 characters**
+- **First sentence must be complete, not a fragment**
+- Use synonym variations after first mention (e.g., "hand-hammered" instead of repeating "hammered")
+- Include: materials (specific), shape/texture, aesthetic/era reference, wearing details if relevant
+- Describe only what you see
 - Minimum 160+ total characters
-- Make it easy to visualize
 
-**Description Structure:**
-1. Sentence 1 (under 160 chars): Include focus keyword + primary material/feature description
-2. Sentence 2: Aesthetic/style context (can use variations/synonyms)
-3. Sentence 3: Wearing details, size, or additional features (use different vocabulary)
+**Structure:**
+1. Sentence 1 (<160 chars): Focus keyword + primary material/feature
+2. Sentence 2: Aesthetic/style context (use variations/synonyms)
+3. Sentence 3: Wearing details, size, or additional features
 
-**Description Example:**
-Title: "Handmade Copper Moon Earrings, Hammered Boho Dangle, Lightweight Festival Jewelry"
-Description: "These handmade copper moon earrings feature a hand-hammered texture that catches light beautifully. The crescent shapes bring 70s festival energy with a contemporary artisan edge. Lightweight dangles on simple wire hooks make them easy to wear all day."
-✅ "handmade copper moon earrings" in first sentence (under 160 chars)
-✅ Uses variations after: "hand-hammered" instead of repeating "hammered"
-✅ Adds details not in title: "catches light", "crescent shapes", "wire hooks"
-
-**SEO Keywords Guidelines:**
-- Etsy allows up to 13 tags, each with a maximum of 20 characters
-- List 13 keyword phrases on separate lines (no bullets, no commas)
-- **Each keyword must be 20 characters or less** to fit Etsy's tag character limit
-- Prioritize popular shopper search terms (e.g., "copper earrings," "boho jewelry," "handmade gifts")
+**SEO Keywords:**
+- 13 keyword phrases, each 20 characters or less (Etsy's tag limit)
+- One per line (no bullets, no commas)
 - Mix short-tail (copper earrings, boho jewelry) and multi-word phrases (hammered copper, wire wrapped, gift for her)
 - Include: material-based, style-based, occasion/gift, audience-focused terms
-- Use all 13 tags for maximum SEO benefit
-- Don't worry about plurals—Etsy matches singular/plural automatically
+- Use all 13 tags for maximum SEO
 
-**VALIDATION CHECKLIST (Apply Before Outputting Product Descriptions):**
-
-Before generating the final output, verify all requirements are met:
-
-**Etsy Title Check:**
-- [ ] Focus keyword (3-5 word phrase) is first in title
-- [ ] Proper capitalization - title case used (NOT all lowercase)
-- [ ] No repeated words anywhere in title - product type (earrings, necklace, bracelet) appears only once
-- [ ] No repeated words including synonyms (boho/bohemian count as repetition)
-- [ ] No unnecessary qualifiers ("for Women," "for Her," etc.)
-- [ ] Includes material/color/size attributes
-- [ ] Under 15 words total
-- [ ] Aim for 100-130 characters of meaningful keywords (not necessarily maxing out 140)
-- [ ] Reads naturally when spoken aloud
-- [ ] No subjective promotional language (beautiful, perfect, stunning, gorgeous, elegant, statement)
-- [ ] No gifting terms (gift for her, birthday gift, etc.)
-- [ ] No sale/delivery terms (free shipping, on sale, etc.)
-
-**Product Description Check:**
-- [ ] Focus keyword appears in first 160 characters
-- [ ] Uses different phrasing/synonyms after first mention
-- [ ] Total length 160+ characters
-- [ ] Avoids trite brand voice phrases
-- [ ] First sentence is complete and natural
-
-**If any check fails, revise before presenting to user.**
+**Validation Before Output:**
+- Focus keyword first in Etsy title
+- Proper capitalization (title case)
+- No repeated words or synonyms
+- No unnecessary qualifiers, subjective words, gifting/sale terms
+- Material/color/size attributes included
+- Under 15 words, 100-130 characters
+- Reads naturally aloud
+- Focus keyword in first 160 chars of description
+- Uses different phrasing after first mention
+- Description 160+ characters total
+- First sentence complete and natural
 
 ### 2. Pinterest Pins
 
-Create Pinterest-optimized descriptions with search-friendly formatting.
-
 **Output Format:**
-
 ```
 **Title:**
 [Title here]
@@ -196,63 +124,43 @@ Create Pinterest-optimized descriptions with search-friendly formatting.
 [comma-separated keywords without "Keywords:" label]
 ```
 
-**Title Guidelines:**
-- Maximum 100 characters (Pinterest's limit)
+**Title:**
+- Max 100 characters
 - Format: [Metal/Material] [Design Feature] [Type] — [Style Descriptor]
-- Use natural, searchable language
 - Example: Hammered Copper Feather Pendant Necklace — Boho Minimalist Jewelry
 
-**Description Guidelines:**
-- 40-60 words optimal for Pinterest readability
+**Description:**
+- 40-60 words optimal
 - Lead with most distinctive feature
 - Include: materials, crafting technique, style context, use case
 - Neutral and informative—not promotional
-- Concrete and specific—avoid vague descriptors
+- Concrete and specific
 - No emojis, exclamation points, or superlatives
-- **IMPORTANT**: Create unique variations for the same product shown in different shots. Even if the catalog ID is the same, vary the title, description, and keywords to highlight different aspects (e.g., materials vs. movement vs. styling) for Pinterest best practices
+- **Create unique variations for same product in different shots** (vary title, description, keywords to highlight different aspects)
 
-**Keywords Guidelines:**
-- 8-12 relevant search terms in comma-separated format
+**Keywords:**
+- 8-12 relevant search terms, comma-separated
 - Do NOT include "Keywords:" label
-- Think like a shopper—what would they search?
-- Include: material names, design motifs, jewelry type, style categories
 - Order by relevance (most important first)
-- Use keywords from the approved SEO list below when natural and appropriate
+- Think like a shopper
 
-**Pinterest SEO-Optimized Keyword List:**
+**Top Pinterest Keywords (use naturally when appropriate):**
 
-Use these keywords naturally when they fit the product. Mix short-tail (high volume, broad reach) and long-tail (targeted, higher conversion) keywords.
+*High-Volume:*
+boho fashion, boho style, boho chic, bohemian style, festival outfits, festival fashion, handmade jewelry, unique jewelry, copper jewelry, artisan earrings, jewelry gifts, tropical jewelry, beach style, beach aesthetic, gifts for friends, gift for girlfriend, chic summer style, statement piece, organic modern, jewelry trends
 
-*High-Volume Keywords (from Pinterest Campaign Manager):*
-- boho fashion, boho summer outfits, boho style, boho chic, boho outfit, boho wedding, bohemian style, bohemian fashion
-- festival outfits, festival fashion
-- jewelry trends, jewelry lover, jewelry designers, jewelry aesthetic, jewelry unique, jewelry sets, jewelry love, jewelry and accessories, jewelry styled, jewelry for woman, jewelry bracelet, jewelry on sale
-- handmade jewelry, handmade jewellery, handmade necklace, handmade gift ideas, handcrafted, handcrafted jewelry
-- unique jewelry
-- style inspo, style summer, style trends, style outfits, style me pretty, style inspiration
-- organic modern
-- chic summer style, chic casual outfit, chic clothing, chic summer outfit, chic outfit ideas, chic outfits summer, chic summer outfits, chic fashion
-- statement piece, statement pieces
-- beach style, beach outfits, beach vacation outfits, beach aesthetic, beach vibes, beach fashion, beach outfit ideas, beach life, beach life aesthetic, beach lifestyle, beach look
-- tropical aesthetic, tropical outfit, tropical outfit ideas, tropics vacation outfits, tropical clothing, tropical fashion
-- gifts ideas, gifts for friends, gift for girlfriend, gift ideas for mom, gifts for mom, gift for mom, gift idea, gift ideas
-- copper jewelry
+*Short-Tail:*
+handmade jewelry, copper earrings, boho jewelry, dangle earrings, handmade earrings
 
-*Short-Tail Keywords (High Volume):*
-- handmade jewelry, copper earrings, boho jewelry, tropical jewelry, artisan earrings, unique earrings, dangle earrings, jewelry gifts, handmade earrings
+*Long-Tail:*
+handmade copper earrings for women, boho dangle earrings for everyday wear, copper jewelry for sensitive ears, lightweight handmade earrings for gifts, nature-inspired jewelry with tropical vibes, unique earrings for boho fashion lovers
 
-*Long-Tail Keywords (Targeted, Higher Conversion):*
-- handmade copper earrings for women, tropical-inspired artisan jewelry, boho dangle earrings for everyday wear, copper jewelry for sensitive ears, lightweight handmade earrings for gifts, nature-inspired jewelry with tropical vibes, handmade jewelry gift ideas for her, small batch artisan jewelry, unique earrings for boho fashion lovers, best handmade copper earrings on Etsy
-
-*Niche & Trend-Specific Keywords:*
-- sustainable handmade jewelry, eco-friendly copper earrings, boho fashion accessories, jewelry for beach lovers, tropical wedding jewelry, minimalist handmade earrings, island-inspired jewelry gifts, statement earrings for summer, handmade jewelry under $50, ethical artisan jewelry gifts
+*Niche/Trend:*
+sustainable handmade jewelry, eco-friendly copper earrings, boho fashion accessories, jewelry for beach lovers, minimalist handmade earrings, island-inspired jewelry gifts, statement earrings for summer, ethical artisan jewelry gifts
 
 ### 3. Instagram/Facebook Posts
 
-Create engaging social media captions that drive to shop while maintaining brand authenticity.
-
 **Output Format:**
-
 ```
 [2-3 sentence caption with evocative opening + product description + optional emotional/sensory context]
 
@@ -260,17 +168,17 @@ Create engaging social media captions that drive to shop while maintaining brand
 ·
 Get 15% off your first order when you sign up for emails (link in bio)
 ·
-#Hashtag1 #Hashtag2 #Hashtag3 [15-20 hashtags total]
+#Hashtag1 #Hashtag2 #Hashtag3 [up to 10 hashtags total]
 ```
 
-**Caption Guidelines:**
-- Keep it short and punchy (2-3 sentences max)
-- Opening line: evocative but grounded—vary your approach. Lead with a direct statement, sensory detail, historical context, or material focus. **AVOID repetitive patterns** like "There's something about..." or "It comes alive in..." Use diverse sentence structures.
+**Caption:**
+- 2-3 sentences max
+- Opening: evocative but grounded—vary approach (direct statement, sensory detail, historical context, material focus)
+- **AVOID repetitive patterns** like "There's something about..."
 - Middle: concrete product details—materials, texture, aesthetic
-- Optional: emotional/sensory context or inspiration behind the piece
+- Optional: emotional/sensory context or inspiration
 - Optional casual sign-off: "What do you think?" "Happy weekend, handmade lovers ⭐"
 - Natural, conversational tone
-- **Vary opening structures** across different posts—don't rely on the same patterns repeatedly
 
 **CTA Structure (always include):**
 ```
@@ -280,86 +188,61 @@ Get 15% off your first order when you sign up for emails (link in bio)
 ·
 ```
 
-**Hashtag Guidelines:**
-- Use **no more than 10 hashtags** per post
-- Mix general and niche hashtags for reach and targeting
-- All hashtags should be CamelCase for readability
-- Select from the **Primary Hashtags** list below when appropriate, choosing the most relevant for each piece
-- Add product-specific or seasonal hashtags as needed (e.g., #ModernMystic, #WitchyStyle, #SummerJewelry, #FallJewelry)
+**Hashtags:**
+- **Max 10 hashtags** per post
+- Mix general and niche for reach and targeting
+- All CamelCase for readability
+- Select most relevant from Primary list below
+- Add product-specific or seasonal as needed
 
-**Primary Hashtags (preferred values - select most relevant):**
-#SummerStyle #SummerJewelry #HandmadeJewelry #CopperJewelry #MadeInMiami #TropicalJewelry #ArtisanJewelry #SmallBusinessOwner #InstaSmithy #LadySmith #MetalSmith #RioJeweler #SlowFashion #ModernCoastal #CoastalJewelry #JewelryArtist #JewelryMaker #JewelryDesigner #ShopSmall #JewelryGram #BohoChic #BohoJewelry
+**Primary Hashtags:**
+#SummerStyle #SummerJewelry #HandmadeJewelry #CopperJewelry #MadeInMiami #TropicalJewelry #ArtisanJewelry #SmallBusinessOwner #MetalSmith #SlowFashion #ModernCoastal #CoastalJewelry #JewelryArtist #JewelryMaker #ShopSmall #JewelryGram #BohoChic #BohoJewelry
 
-**Additional hashtags for specific contexts:**
-- Seasonal: #FallJewelry #WinterStyle #SpringFashion
-- Style/Aesthetic: #ModernMystic #WitchyStyle #ContemporaryJewelry #HandForgedJewelry
-- Mix of: materials, style, audience, location, process, and platform-specific tags
+**Additional (context-specific):**
+Seasonal: #FallJewelry #WinterStyle #SpringFashion
+Style/Aesthetic: #ModernMystic #WitchyStyle #ContemporaryJewelry #HandForgedJewelry
 
 ## Saving to Notion
 
-After generating content, ask to save it to the appropriate Notion database for organization and easy access.
-
-**Notion Database Locations:**
-
-- **Instagram/Facebook Posts** → Social Media Content Calendar
-  - Data Source URL: `collection://5f62fb21-4d92-4d54-b03d-fb9f69d89b9f`
-  - Database URL: https://www.notion.so/12d6a7404245809dbaefc4386730b25c
+**Database Locations:**
+- **Instagram/Facebook** → Social Media Content Calendar
+  - Data Source: `collection://5f62fb21-4d92-4d54-b03d-fb9f69d89b9f`
+  - URL: https://www.notion.so/12d6a7404245809dbaefc4386730b25c
 
 - **Product Descriptions** → Subtle Parts Inventory
-  - Data Source URL: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`
-  - Database URL: https://www.notion.so/b605305c33004c3e873192ee11805f19
+  - Data Source: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`
+  - URL: https://www.notion.so/b605305c33004c3e873192ee11805f19
 
-- **Pinterest Pins** → Pinterest Posts database (embedded in Pinterest Pins page)
-  - Data Source URL: `collection://18d6a740-4245-807f-82f5-000bb3fae46a`
-  - Parent Page URL: https://www.notion.so/18d6a740424580a3bb70c88244b47b13
+- **Pinterest Pins** → Pinterest Posts database
+  - Data Source: `collection://18d6a740-4245-807f-82f5-000bb3fae46a`
+  - Parent: https://www.notion.so/18d6a740424580a3bb70c88244b47b13
 
-**Notion Page Structure:**
-
-For **Instagram/Facebook posts**, create a page in the Social Media Content Calendar with:
-- **Properties:**
-  - `Name`: First few words of caption or product name
-  - `Format`:
-    - "carousel" if more than 1 image
-    - "post" if just 1 image
-    - "reel" if user specifies it's a reel
-  - `Status`: "In progress"
-  - `Publish Date`: Default to today's date unless user specifies otherwise
-  - `Content Type`: Select the most appropriate based on the content:
-    - "Romance the Product" - Product-focused posts highlighting beauty and details
-    - "Behind the Scenes/Day in the Life" - Studio, process, or maker content
-    - "Quick Tip" - Brief styling or care tips
-    - "Inspiration Moment" - Mood, aesthetic, or inspiration-driven
-    - "Design Storytelling" - Story behind the design or creation
-    - "Customer Showcase" - Customer photos or testimonials
-    - "Tropical Lifestyle Memes" - Miami/tropical lifestyle content
-    - "New Product Sneak Peak" - Previews of upcoming products
-    - "Educational Post/ FAQ" - Jewelry education or answering questions
-    - "Artist Reflections" - Personal reflections from the maker
-    - "Seasonal" - Holiday or seasonal content
-  - `Pillar`: Select one or more that apply (multi-select):
-    - "Product Showcase" - Highlighting products
-    - "Behind-the-Scenes" - Process, studio, maker content
-    - "Nature Inspired - Tropical Lifestyle" - Tropical, Miami, nature themes
-    - "Jewelry Education & Styling Tips" - Educational or styling content
+**Instagram/Facebook Properties:**
+- `Name`: First few words of caption or product name
+- `Format`: "carousel" (>1 image), "post" (1 image), or "reel"
+- `Status`: "In progress"
+- `Publish Date`: Today's date unless specified
+- `Content Type`: Romance the Product, Behind the Scenes, Quick Tip, Inspiration Moment, Design Storytelling, Customer Showcase, Tropical Lifestyle Memes, New Product Sneak Peak, Educational Post/FAQ, Artist Reflections, Seasonal
+- `Pillar`: Product Showcase, Behind-the-Scenes, Nature Inspired - Tropical Lifestyle, Jewelry Education & Styling Tips (multi-select)
 - **Content:** Full caption with CTA and hashtags
 
-For **Product Descriptions**, create a page in the Subtle Parts Inventory with:
-- **Properties:**
-  - `Title`: ask what title to provide every time, or use the title provided if supplied.
-  - `Shopify SEO Title`: The Shopify title
-  - `Etsy Listing Title`: The Etsy title
-  - `SEO keywords`: The keyword list (as plain text)
-  - `Shopify`: "Not listed"
-  - `Etsy Status`: "Not started"
-- **Content:** Include the full product description, followed by the standard formatted sections below
+**Product Description Properties:**
+- `Title`: Ask user or use provided title
+- `Shopify SEO Title`: The Shopify title
+- `Etsy Listing Title`: The Etsy title
+- `SEO keywords`: Keyword list (plain text)
+- `Shopify`: "Not listed"
+- `Etsy Status`: "Not started"
+- **Content:** Description + standard format below
 
-**Standard Product Description Format for Notion:**
-
-When saving product descriptions to Notion, always append this formatted content after the main 2-3 sentence description:
-
+**Standard Product Format (append after description):**
 ```
 📐 SIZING:
-[Customize based on product type - see rules below]
+[Customized by type - ask user for measurements:
+- Earrings: "Drop length is X inches, width is X inches."
+- Necklaces: "Total length is X inches." + pendant dimensions if applicable
+- Bracelets: "Total length around is X inches."
+- Ask if custom sizing available, add "Custom sizes are available upon request." if yes]
 
 ✨ MATERIALS:
 Every item is 100% handmade and one-of-a-kind. Since gemstones are unique, a slight variation from the colors pictured should be expected.
@@ -374,79 +257,42 @@ Whether you're celebrating a birthday, anniversary, or simply looking for a thou
 I design and make all jewelry in Miami by hand with simple tools and intentionally sourced materials. Thanks for supporting this small business!
 ```
 
-**IMPORTANT:** The SIZING section must be customized based on the specific product:
-- For **earrings**: "Drop length is X inches, width is X inches."
-- For **necklaces**: "Total length is X inches." 
-- If the necklace includes a pendant, also include: "Pendant height is X inches, width is X inches."
-- For **bracelets**: "Total length around is X inches."
-- Always ask the user for specific measurements if not provided
-- If not specified, always ask the user if custom sizing is available. If so append the line at the bottom of the section "Custom sizes are available upon request."
-
-For **Pinterest Pins**, create a page in the Pinterest Posts database with:
-
-**IMPORTANT: Pinterest Pin Workflow with Inventory Linking**
-
-1. **Extract catalog ID from filename** - The image filename follows the format `[CATALOG-ID].png` (e.g., `E-BC-003-BEA-PLGR-M.png` where `E-BC-003-BEA-PLGR-M` is the catalog ID/SKU). The catalog ID format is: `[CATEGORY]-[MATERIAL]-[DESIGN CODE]-[STYLE]-[COLOR]-[SIZE]`
-2. **Determine Board from catalog ID prefix**:
-   - **E-** (Earrings) → Board: "Earrings"
-   - **N-** (Necklace) → Board: "Necklaces"
-   - **B-** (Bracelet) → Board: "Bracelets"
-   - If prefix doesn't match E-, N-, or B-, ask the user what the Board should be
-3. **Generate content** - Create the Pinterest pin title, description, and keywords. IMPORTANT: Always create unique variations even for the same catalog ID/product—vary the angle, focus, and keywords to highlight different aspects (materials, styling, movement, etc.) for Pinterest best practices
-4. **Display content first** - Show the complete Pinterest pin content to the user for review BEFORE adding to Notion
-5. **Ask to save** - Ask: "Would you like me to save this to Notion?"
-6. **Look up inventory** - Search the Subtle Parts Inventory database (data source: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`) for the catalog ID to find the matching inventory item
-7. **Find Shopify product URL** - Search for the product matching the catalog ID/SKU in the product variant data by checking multiple collection feeds:
-   - First, search `https://thesubtleparts.com/collections/new-arrivals/products.json` (with pagination if needed: `?page=1`, `?page=2`, etc.)
-   - If not found, search `https://thesubtleparts.com/collections/all/products.json` (with pagination if needed)
-   - The SKU is found in `variants[].sku` for each product
-   - If found, extract the product handle to create the destination URL: `https://thesubtleparts.com/products/[handle]`
-   - **IMPORTANT**: If no match is found in either collection feed, leave the Destination link field blank and inform the user that the product wasn't found in Shopify (it may be unpublished or not assigned to these collections). Never construct or guess URLs.
-8. **Create Pinterest pin page** with properties:
-   - `Title`: Use the Pinterest title
-   - `Text`: Include the description and comma-separated keywords
-   - `Board`: Determined by the catalog ID prefix (E- → "Earrings", N- → "Necklaces", B- → "Bracelets"). If prefix doesn't match, ask user
-   - `Inventory`: The URL of the matching inventory item (relation field)
-   - `Destination link`: The Shopify product URL (e.g., `https://thesubtleparts.com/products/black-crystal-fringe-bar-necklace`)
-   - `date:Date:start`: Today's date in YYYY-MM-DD format (CRITICAL - required for filtered views)
+**Pinterest Pin Workflow:**
+1. Extract catalog ID from filename format: `[CATALOG-ID].png` (e.g., `E-BC-003-BEA-PLGR-M.png`)
+2. Determine Board from prefix: E- → "Earrings", N- → "Necklaces", B- → "Bracelets" (ask if no match)
+3. Generate content (create unique variations even for same catalog ID)
+4. Display content first for review
+5. Ask: "Would you like me to save this to Notion?"
+6. Search Inventory (data source: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`) for catalog ID
+7. Find Shopify URL:
+   - Search `https://thesubtleparts.com/collections/new-arrivals/products.json` (paginate if needed)
+   - If not found, search `https://thesubtleparts.com/collections/all/products.json`
+   - Match SKU in `variants[].sku`, extract handle to create: `https://thesubtleparts.com/products/[handle]`
+   - If no match, leave Destination link blank and inform user
+8. Create page with properties:
+   - `Title`: Pinterest title
+   - `Text`: Description + comma-separated keywords
+   - `Board`: From catalog ID prefix
+   - `Inventory`: URL of matching inventory item (relation)
+   - `Destination link`: Shopify product URL
+   - `date:Date:start`: Today (YYYY-MM-DD)
    - `date:Date:is_datetime`: 0
-   - **Note**: Leave `Catalog ID` field blank (do not populate)
-9. **Confirm and provide link** to the created Notion page
-
-**Workflow:**
-1. Generate content as requested
-2. Ask: "Would you like me to save this to Notion?"
-3. If yes, save to the appropriate database using the data source URL
-4. Confirm once saved and provide the Notion page link
+   - Leave `Catalog ID` blank
+9. Confirm and provide link
 
 ## Usage Instructions
 
-When user provides an image or description of jewelry:
-
-1. **Extract the product SKU** - The user will typically provide a folder containing product images. The folder name IS the product SKU (e.g., `E-C-136-DEC-NU-L`)
-2. **Ask for clarification if needed** - materials, measurements, or features that aren't clear
-3. **Determine output type** - which content format(s) does the user need?
-4. **Generate content** following the exact format specified for each type
+1. **Extract SKU** - Folder name IS the product SKU (e.g., `E-C-136-DEC-NU-L`)
+2. **Ask for clarification** if materials/measurements/features unclear
+3. **Determine output type** - which content format(s) needed?
+4. **Generate content** following exact format for each type
 5. **Maintain brand voice** - grounded, warm, specific, avoiding trite phrases
-6. **Be accurate** - describe only what you see, don't assume or embellish
+6. **Be accurate** - describe only what you see
 7. **Ask about Notion**: "Would you like me to save this to Notion?"
-8. **If yes, check if product exists first**:
-   - Search the Subtle Parts Inventory database (use `mcp__notion__notion-search` with the SKU) to see if a page with this SKU already exists
-   - If found: Update the existing page with the new content
-   - If not found: **Always ask the user before creating a new page** - "I couldn't find an existing product with SKU [SKU]. Would you like me to create a new page in the inventory?"
-9. **Save to appropriate database**:
-   - Instagram/Facebook posts → Social Media Content Calendar (data source: `collection://5f62fb21-4d92-4d54-b03d-fb9f69d89b9f`)
-   - Product descriptions → Subtle Parts Inventory (data source: `collection://b73d8dd1-93cb-4b77-a163-bc678d3d3aba`)
-   - Pinterest pins → Pinterest Posts database (data source: `collection://18d6a740-4245-807f-82f5-000bb3fae46a`)
-     - Extract catalog ID from filename
-     - Determine Board from catalog ID prefix (E- → "Earrings", N- → "Necklaces", B- → "Bracelets"). If no match, ask user
-     - Search Inventory database for matching item
-     - Fetch Shopify products to find matching product URL
-     - Link inventory item in "Inventory" relation field
-     - Add Shopify product URL to "Destination link" field
-     - Set "Board" field based on catalog ID prefix
-     - Add today's date to "Date" field
-     - Leave "Catalog ID" field blank (do not populate)
-10. **Confirm and provide link** to the created Notion page
+8. **Check if exists first**:
+   - Search Inventory database for SKU
+   - If found: Update existing page
+   - If not found: Ask before creating - "I couldn't find an existing product with SKU [SKU]. Would you like me to create a new page?"
+9. **Save to database** and confirm with link
 
-If generating multiple content types for the same piece, ensure consistency in how materials and aesthetics are described across all formats.
+If generating multiple content types for same piece, ensure consistency in materials and aesthetics across all formats.
