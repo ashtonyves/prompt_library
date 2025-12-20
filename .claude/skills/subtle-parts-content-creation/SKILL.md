@@ -58,7 +58,7 @@ keyword two
 ✅ Focus keyword first (3-5 words)
 ✅ Use commas to separate phrases
 ✅ Material, color, or size attributes included
-✅ Under 15 words total
+✅ 14 words or less total
 ✅ 100-130 characters of meaningful keywords (quality > max length)
 ✅ Proper title case capitalization
 ✅ Natural flow when spoken aloud
@@ -81,6 +81,7 @@ keyword two
 - 2-3 short, punchy sentences
 - **Focus keyword (exact phrase from title) MUST appear in first 160 characters**
 - **First sentence must be complete, not a fragment**
+- **DO NOT include exact measurements** (e.g., "2 inches long", "1.25 inch diameter") - sizing has its own dedicated section
 - Use synonym variations after first mention (e.g., "hand-hammered" instead of repeating "hammered")
 - Include: materials (specific), shape/texture, aesthetic/era reference, wearing details if relevant
 - Describe only what you see
@@ -89,13 +90,14 @@ keyword two
 **Structure:**
 1. Sentence 1 (<160 chars): Focus keyword + primary material/feature
 2. Sentence 2: Aesthetic/style context (use variations/synonyms)
-3. Sentence 3: Wearing details, size, or additional features
+3. Sentence 3: Wearing details or additional features (NO measurements)
 
 **SEO Keywords:**
 - 13 keyword phrases, each 20 characters or less (Etsy's tag limit)
 - One per line (no bullets, no commas)
-- Mix short-tail (copper earrings, boho jewelry) and multi-word phrases (hammered copper, wire wrapped, gift for her)
-- Include: material-based, style-based, occasion/gift, audience-focused terms
+- Mix short-tail (copper earrings, boho jewelry) and multi-word phrases (hammered copper, wire wrapped)
+- Include: material-based, style-based, technique-based terms
+- **DO NOT include "gift for her" or similar gifting terms** - these belong in titles/descriptions only
 - Use all 13 tags for maximum SEO
 
 **Validation Before Output:**
@@ -104,7 +106,7 @@ keyword two
 - No repeated words or synonyms
 - No unnecessary qualifiers, subjective words, gifting/sale terms
 - Material/color/size attributes included
-- Under 15 words, 100-130 characters
+- 14 words or less, 100-130 characters
 - Reads naturally aloud
 - Focus keyword in first 160 chars of description
 - Uses different phrasing after first mention
@@ -233,6 +235,7 @@ Style/Aesthetic: #ModernMystic #WitchyStyle #ContemporaryJewelry #HandForgedJewe
 - `SEO keywords`: Keyword list (plain text)
 - `Shopify`: "Not listed"
 - `Etsy Status`: "Not started"
+- `Optimized`: Set to "Optimized" after updating/optimizing content
 - **Content:** Description + standard format below
 
 **Standard Product Format (append after description):**
@@ -294,5 +297,6 @@ I design and make all jewelry in Miami by hand with simple tools and intentional
    - If found: Update existing page
    - If not found: Ask before creating - "I couldn't find an existing product with SKU [SKU]. Would you like me to create a new page?"
 9. **Save to database** and confirm with link
+10. **Set Optimized status**: When creating or updating product content, set the `Optimized` property to "Optimized"
 
 If generating multiple content types for same piece, ensure consistency in materials and aesthetics across all formats.
