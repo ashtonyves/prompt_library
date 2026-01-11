@@ -78,19 +78,26 @@ keyword two
 - Proper capitalization, "Heart" once, "Earrings" once, specific gemstone name, unique feature
 
 **Product Description:**
-- 2-3 short, punchy sentences
+- 2-3 complete and concise, naturally flowing sentences
 - **Focus keyword (exact phrase from title) MUST appear in first 160 characters**
+- **Write for humans first, SEO second** - descriptions must read smoothly and conversationally, not choppy or robotic
 - **First sentence must be complete, not a fragment**
 - **DO NOT include exact measurements** (e.g., "2 inches long", "1.25 inch diameter") - sizing has its own dedicated section
-- Use synonym variations after first mention (e.g., "hand-hammered" instead of repeating "hammered")
+- Use synonym variations after first mention (e.g., "hand-crafted" instead of repeating "wire wrapped")
 - Include: materials (specific), shape/texture, aesthetic/era reference, wearing details if relevant
 - Describe only what you see
-- Minimum 160+ total characters
+- Minimum 200+ total characters for better flow
 
 **Structure:**
-1. Sentence 1 (<160 chars): Focus keyword + primary material/feature
-2. Sentence 2: Aesthetic/style context (use variations/synonyms)
-3. Sentence 3: Wearing details or additional features (NO measurements)
+1. Sentence 1: Focus keyword naturally incorporated + primary materials/features (complete sentence with subject + verb)
+2. Sentence 2: Aesthetic/style context with smooth transitions (use variations/synonyms)
+3. Sentence 3 (optional): Wearing details or additional features (NO measurements)
+
+**Example of good flow:**
+✅ "This wire wrapped rainbow quartz pendant necklace is hand-crafted with oxidized copper wirework and topped with a feminine pink agate accent. The piece captures Miami's tropical energy and Art Deco influence, blending earthy boho charm with modern elegance that effortlessly jazzes up any outfit."
+
+**Example of choppy/robotic (avoid):**
+❌ "Wire wrapped rainbow quartz pendant necklace features copper and pink agate. Boho style. Modern look."
 
 **SEO Keywords:**
 - 13 keyword phrases, each 20 characters or less (Etsy's tag limit)
