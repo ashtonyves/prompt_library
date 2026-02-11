@@ -1,11 +1,15 @@
 # Create Subtle Parts Content
 
-Create product content for The Subtle Parts jewelry business using the full content creation skill.
+---
+allowed-tools: Read
+description: Create product content for The Subtle Parts jewelry business using the full content creation skill.
+---
 
 **SKU:** $1
 **Image(s):** $2
 **Type:** $3
 **Starting description:** $4
+
 
 ## Instructions
 
