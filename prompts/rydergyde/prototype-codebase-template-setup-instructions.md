@@ -23,6 +23,29 @@ npm install @emotion/react @emotion/styled @mui/material @mui/icons-material @mu
 
 # 4. Link the local library (from library folder first: npm link)
 npm link rg-core-library
+
+# 5. Configure Vite to dedupe linked dependencies (see below)
+```
+
+### Required Vite Configuration
+
+> **CRITICAL:** This project uses `rg-core-library` via `npm link`. Because the linked package has its own `node_modules/`, Vite can resolve duplicate copies of React and MUI, which causes silent rendering crashes.
+
+vite.config.ts MUST include:
+
+```ts
+import path from 'path'
+
+export default defineConfig({
+  // ... other config
+  resolve: {
+    dedupe: ['react', 'react-dom', '@mui/material', '@mui/icons-material', '@emotion/react', '@emotion/styled'],
+    alias: {
+      react: path.resolve(__dirname, 'node_modules/react'),
+      'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
+    },
+  },
+})
 ```
 
 ### Required Imports in main.tsx
