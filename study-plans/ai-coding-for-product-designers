@@ -1,0 +1,271 @@
+# AI Coding for Designers — Personalized Study Plan
+
+## How This Works
+
+This study plan adapts the 4-week bootcamp syllabus to your specific context: 10 years of product design experience, active work on the RyderGyde component library, and existing familiarity with Cursor, Claude Code, git, and React fundamentals. Rather than starting from zero, we'll **skip what you know, deepen what you've touched, and fill the gaps that matter most** for your design engineering trajectory.
+
+Each module has:
+- **Concept** — the "why" behind the topic, connecting it to your design knowledge
+- **Practical Exercise** — a hands-on task you'll do in your own environment
+- **Checkpoint** — how you'll know you've internalized it before moving on
+
+When you're ready to work on a module, come back to this project and say something like *"Let's do Module 3"* — I'll walk you through it interactively, answer questions, review your code, and adapt the difficulty based on how it's going.
+
+---
+
+## Your Skill Map (Starting Point)
+
+| Area | Your Level | Plan |
+|---|---|---|
+| HTML/CSS | Familiar, building confidence | Deepen semantics + accessibility |
+| Tailwind CSS | Light exposure | Focused learning — core to your stack |
+| JavaScript/TypeScript | Working knowledge via React | Fill conceptual gaps, strengthen TS |
+| React | Active use (RyderGyde) | Deepen patterns, hooks, composition |
+| Next.js | Limited | Full introduction — routing, layouts, rendering |
+| Git/GitHub | Daily use (worktrees, branching) | Refine workflow, add PR practices |
+| Cursor + Claude | Power user | Optimize prompting for learning vs. shipping |
+| Component Libraries | Building one (RyderGyde + MUI) | Connect to ShadCN patterns |
+| Design Tokens | Active (Figma → CSS vars) | Bridge to Tailwind config + theming |
+
+---
+
+## Phase 1: Foundations & Environment (Week 1)
+
+### Module 1: AI Coding Agents — Learning Mode vs. Shipping Mode
+
+**You already use Cursor and Claude Code daily.** This module isn't about setup — it's about using AI tools *as a learning accelerator* rather than just a productivity tool.
+
+**Concept:** There's a critical difference between asking Claude to *write code for you* and asking Claude to *teach you while you write code*. As a design engineer in training, you need both modes, but knowing when to switch is a skill.
+
+**Practical Exercise:**
+1. Pick a small UI pattern you've never built from scratch (e.g., an accordion, a tooltip, a toast notification)
+2. Build it **without** letting Claude write the component for you — instead, ask Claude to explain each step and concept as you type the code yourself
+3. When you get stuck, ask Claude to explain the *concept* rather than give you the *solution*
+4. After you've built it, ask Claude to review your code and explain what you'd do differently
+
+**Checkpoint:** You can articulate the difference between `useState` and `useEffect` in your own words, using a design analogy.
+
+---
+
+### Module 2: Frontend Environment — What's Actually Happening
+
+**You have a working environment.** This module fills the mental model of what all those tools are actually doing under the hood.
+
+**Concept:** When you run `npm run dev`, a chain of tools activates: Node.js runs JavaScript outside the browser, npm manages packages, Vite bundles your code and serves it with hot reload. Understanding this chain helps you debug when things break — and they will.
+
+**Practical Exercise:**
+1. In your terminal, run `node --version`, `npm --version`, and `npx --version` — note what each one does
+2. Open your RyderGyde `package.json` and identify: dependencies vs. devDependencies, scripts, and what each script command actually triggers
+3. Deliberately break something (misspell an import) and read the full error message — practice translating error messages into plain English
+4. Create a fresh Next.js project from scratch using `npx create-next-app@latest` and compare its structure to your existing projects
+
+**Checkpoint:** You can explain what `package.json`, `node_modules`, and `package-lock.json` each do — and why you don't commit `node_modules` to git.
+
+---
+
+### Module 3: Git & GitHub — Beyond the Basics
+
+**You already use git daily with worktrees.** This module focuses on the collaboration patterns you'll need when working with other engineers.
+
+**Concept:** You've been pushing to main and using worktrees for parallel solo work. The next level is the **pull request workflow** — creating branches, writing good PR descriptions, reviewing code, and using GitHub Issues effectively (which you've already started exploring).
+
+**Practical Exercise:**
+1. In a test repo, create a feature branch, make changes, push it, and open a Pull Request on GitHub
+2. Write a PR description that a designer *and* an engineer would both understand — describe the visual change and the technical change
+3. Practice the PR review interface — leave comments on your own code as if reviewing someone else's work
+4. Set up a branch protection rule on main so you can't push directly (forcing the PR workflow)
+
+**Checkpoint:** You can create a branch, open a PR, and merge it — and you understand why teams use this workflow instead of pushing to main.
+
+---
+
+## Phase 2: JSX, Layouts & Composition (Week 2)
+
+### Module 4: JSX — The Language Between Design and Code
+
+**You write JSX daily in your components.** This module sharpens your understanding of JSX as a design medium — semantic structure, accessibility, and how HTML elements carry meaning.
+
+**Concept:** JSX isn't just "HTML in JavaScript." Every element you choose carries semantic meaning that affects accessibility, SEO, and how assistive technologies interpret your UI. As a designer, you already think about hierarchy and structure — JSX is where you express that in code.
+
+**Practical Exercise:**
+1. Take a page from one of your Figma designs and write the JSX structure using only semantic HTML elements — no styling yet
+2. For each element, justify *why* you chose that tag (`<nav>` vs `<div>`, `<section>` vs `<article>`, `<button>` vs `<a>`)
+3. Run your page through an accessibility checker and fix any issues
+4. Compare: write the same layout using all `<div>` elements, then rewrite with proper semantics — feel the difference in the markup's readability
+
+**Checkpoint:** You can look at a Figma design and sketch out its semantic HTML structure before writing any styles.
+
+---
+
+### Module 5: Next.js Layouts & Routing
+
+**This is new territory.** Next.js gives you a framework for building multi-page applications with shared layouts, which is exactly how you think about design systems at the page level.
+
+**Concept:** Think of Next.js routing like Figma pages and frames. The file system *is* your sitemap. `layout.tsx` is like a Figma frame that wraps child pages — the header, sidebar, and footer persist while the page content swaps. `page.tsx` is the unique content for each route.
+
+**Practical Exercise:**
+1. Create a Next.js app with 3 pages: Home, About, Dashboard
+2. Build a shared layout with a navigation header that highlights the current page
+3. Add a nested layout for the Dashboard section (e.g., Dashboard/Overview, Dashboard/Settings) with its own sidebar
+4. Observe how layouts nest and persist — navigate between pages and notice what re-renders and what stays
+
+**Checkpoint:** You can diagram the layout hierarchy of a Next.js app and predict which components persist across navigation.
+
+---
+
+### Module 6: Component Composition & Props — Thinking in Systems
+
+**You do this in RyderGyde already.** This module deepens your understanding of *why* certain prop patterns work better than others — connecting directly to the API standardization work you've been doing.
+
+**Concept:** Component composition in React mirrors component architecture in Figma — but with a key difference. In Figma, variants are visual. In React, variants are *behavioral*. Props control what a component looks like and how it behaves. The decisions you've been making about boolean props vs. enumerated states? That's API design, and it's one of the most important skills in design engineering.
+
+**Practical Exercise:**
+1. Build a `Card` component with these requirements: title (required), description (optional), image (optional), action button (optional), variant ("default" | "outlined" | "elevated")
+2. Use the `children` prop pattern to make the card body flexible
+3. Create a `CardGrid` component that accepts an array of data and maps over it to render cards
+4. Refactor: extract the action button into its own component and pass it as a prop using the render prop or children pattern
+
+**Checkpoint:** You can explain the difference between `children`, render props, and compound components — and when each pattern is appropriate.
+
+---
+
+## Phase 3: Styling & Design Tokens (Week 3)
+
+### Module 7: Tailwind CSS — Utility-First for Designers
+
+**This connects directly to how you think about design tokens.** Tailwind is a utility-first CSS framework that maps almost 1:1 to design system concepts.
+
+**Concept:** Tailwind classes are essentially design tokens applied inline. `p-4` is your spacing token. `text-gray-700` is your color token. `rounded-lg` is your border radius token. Instead of writing CSS files, you compose utilities directly in your JSX — which feels weird at first but becomes incredibly fast once it clicks.
+
+**Practical Exercise:**
+1. Take a simple card component and style it entirely with Tailwind classes — no custom CSS
+2. Build the same component in 3 responsive breakpoints: mobile (default), tablet (`md:`), desktop (`lg:`)
+3. Implement dark mode using Tailwind's `dark:` variant
+4. Create hover, focus, and active states using Tailwind's state variants (`hover:`, `focus:`, `active:`)
+
+**Checkpoint:** You can style a responsive, interactive component using only Tailwind utilities — and you understand how Tailwind's class naming maps to CSS properties.
+
+---
+
+### Module 8: Design Tokens → Tailwind Config
+
+**This bridges your Figma token work to code.** You already map Figma variables to CSS custom properties — now you'll integrate them into Tailwind's configuration system.
+
+**Concept:** Tailwind's `tailwind.config.ts` is where your design system lives in code. You extend the default theme with your own tokens for colors, spacing, typography, and more. This is the code equivalent of your Figma variables — one source of truth that flows through every component.
+
+**Practical Exercise:**
+1. Define a set of design tokens in `tailwind.config.ts` that match your Figma variables (colors, spacing scale, typography scale, border radii)
+2. Reference those tokens in components using Tailwind's custom class names (e.g., `bg-brand-primary`, `text-heading-lg`)
+3. Create a theme switcher that swaps CSS custom properties to change the entire app's appearance
+4. Compare this approach to your current `token-registry.md` workflow — identify what's the same and what's different
+
+**Checkpoint:** You can add a new color token in your Tailwind config and use it throughout your app in under 2 minutes.
+
+---
+
+### Module 9: ShadCN/UI — Composition Over Configuration
+
+**This directly relates to your RyderGyde library work.** ShadCN takes a fundamentally different approach than MUI — understanding the difference will inform your own library decisions.
+
+**Concept:** ShadCN isn't a component library you install — it's a collection of components you *copy into your project* and own. Built on Radix UI primitives (headless, accessible) + Tailwind styling, it represents a "composition over configuration" philosophy. Where MUI gives you a massive API with many props, ShadCN gives you simple building blocks you combine.
+
+**Practical Exercise:**
+1. Initialize ShadCN in a Next.js project and add 3-4 components (Button, Card, Dialog, Input)
+2. Examine the source code of each component — trace how Radix provides accessibility and Tailwind provides styling
+3. Customize a ShadCN component by modifying its source (not overriding with props — actually changing the code)
+4. Compare: take a component you've built in RyderGyde and rebuild it using the ShadCN pattern — note the differences in API complexity, customizability, and developer experience
+
+**Checkpoint:** You can explain the tradeoffs between the MUI approach (install, configure via props) and the ShadCN approach (copy, own, compose) — and articulate when each is better.
+
+---
+
+## Phase 4: Building & Shipping (Week 4)
+
+### Module 10: Next.js Fundamentals — Server & Client
+
+**This is the biggest conceptual shift.** Next.js blurs the line between frontend and backend, and understanding server vs. client components changes how you think about building UIs.
+
+**Concept:** In Next.js App Router, components are *server components by default*. They run on the server, can fetch data directly, and send HTML to the browser. Client components (marked with `"use client"`) run in the browser and handle interactivity. Think of it like this: server components are the structure and content (your Figma frames and text layers), client components are the interactions (your prototyping interactions).
+
+**Practical Exercise:**
+1. Build a page that fetches data from a public API (e.g., a weather API, a quotes API) using a server component — no `useEffect`, no loading spinners
+2. Add a client component for interactivity (a search filter, a toggle, a form)
+3. Observe the difference: the server component data is available *instantly* on page load, while the client component hydrates after
+4. Practice the pattern: server component fetches data → passes it as props → client component handles interaction
+
+**Checkpoint:** You can explain when to use `"use client"` and when to leave a component as a server component — and why the default matters for performance.
+
+---
+
+### Module 11: Putting It All Together — Build a Real Page
+
+**This is where everything connects.** You'll build a complete, production-quality page that uses everything you've learned.
+
+**Concept:** Design engineering isn't about knowing every tool — it's about knowing how they fit together. This module simulates a real feature build: starting from a design, making architectural decisions, implementing, and iterating.
+
+**Practical Exercise:**
+1. Pick a page from a design you've created (or use a community Figma file)
+2. Plan the architecture: draw the component tree, identify which components are server vs. client, map out the data flow
+3. Build it incrementally:
+   - Semantic HTML structure first
+   - Layout with Next.js routing and layouts
+   - Styling with Tailwind + your design tokens
+   - Components with proper props and composition
+   - Interactivity with client components and state
+4. Deploy to Vercel and share the URL
+
+**Checkpoint:** You have a live URL of a page you designed and built yourself, end-to-end.
+
+---
+
+### Module 12: Ship, Deploy & Showcase
+
+**The final step — making your work real.**
+
+**Concept:** Deployment is where design engineering becomes tangible. Pushing your code to Vercel (or Netlify) transforms your local project into a live product anyone can use. This closes the loop from design → code → production.
+
+**Practical Exercise:**
+1. Connect your GitHub repo to Vercel
+2. Configure environment variables if needed
+3. Deploy and verify everything works in production (not just localhost)
+4. Set up automatic deployments — every push to main deploys a new version
+5. Create a simple README that documents your project: what it is, tech stack, how to run locally, live URL
+
+**Checkpoint:** Your project is live, your repo has a clear README, and you can walk someone through what you built and the decisions you made.
+
+---
+
+## How We'll Work Together
+
+### Starting a Module
+Come to this project and say: *"Let's start Module [X]"* — I'll walk you through the concept, give you the exercise, and help you work through it interactively.
+
+### Getting Unstuck
+Paste your code or describe what's happening and say: *"I'm stuck on [X]"* — I'll diagnose the issue, explain the concept behind it, and guide you to the solution without just giving you the answer.
+
+### Code Review
+Share your code and say: *"Review this"* — I'll give you feedback on structure, patterns, accessibility, and next steps.
+
+### Going Deeper
+If a module sparks curiosity, say: *"Go deeper on [concept]"* — I'll expand with advanced patterns, real-world examples, or supplementary exercises.
+
+### Tracking Progress
+I'll track where you are in the plan and adjust upcoming modules based on what you're finding easy vs. challenging. Your RyderGyde work counts — we'll reference it as a living example throughout.
+
+---
+
+## Quick Reference: Design ↔ Code Translations
+
+| Design Concept | Code Equivalent |
+|---|---|
+| Figma Component | React Component |
+| Component Variant | Props / CSS class variant |
+| Auto Layout | Flexbox / CSS Grid |
+| Design Tokens / Variables | CSS Custom Properties / Tailwind Config |
+| Component Instance | JSX Element (`<Button />`) |
+| Nested Frames | Component Composition / `children` prop |
+| Prototype Interactions | Event Handlers (`onClick`, `onChange`) |
+| Page Structure | Next.js Routes + Layouts |
+| Figma Styles | Tailwind Utility Classes / Theme |
+| Responsive Constraints | Media Queries / Responsive Breakpoints |
+| Component Properties | TypeScript Interface / Props |
