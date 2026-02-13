@@ -133,19 +133,15 @@ color: var(--core-primary-main);  /* WRONG */
 **Cause:** Missing `import 'rg-core-library/styles'`
 **Solution:** Add the styles import at the top of main.tsx, BEFORE other CSS imports
 
-#### 2. TypeScript error: Cannot find module 'rg-core-library/styles'
-**Cause:** CSS files don't have TypeScript declarations
-**Solution:** This is expected - the import works at runtime. You can ignore this error or add a declaration file.
-
-#### 3. Components render but have no colors
+#### 2. Components render but have no colors
 **Cause:** CSS variables not defined (old library build)
 **Solution:** Rebuild library with `npm run build:lib` in the library folder
 
-#### 4. Import path not working (e.g., 'rg-core-library/src/...')
+#### 3. Import path not working (e.g., 'rg-core-library/src/...')
 **Cause:** Vite only allows imports defined in package.json exports
 **Solution:** Use `'rg-core-library/styles'` not direct paths to source files
 
-#### 5. Link broken after npm install
+#### 4. Link broken after npm install
 **Cause:** npm install can overwrite symlinks
 **Solution:** Re-run `npm link rg-core-library`
 
