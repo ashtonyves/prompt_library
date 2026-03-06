@@ -56,6 +56,15 @@ Copy the relevant prompt into your AI assistant (Claude, ChatGPT, Cursor, etc.) 
 - Example outputs
 - Customization guidance
 
+## Claude Code Commands
+
+The `.claude/commands/` directory contains slash commands for Claude Code:
+
+| Command | Description |
+|---------|-------------|
+| [/audit-file](.claude/commands/audit-file/SKILL.md) | Audit a file for quality issues, broken references, and inconsistencies |
+| [/summarize-work](.claude/commands/summarize-work/SKILL.md) | Summarize a coding session and post to GitHub Issues |
+
 ## Claude Code Skills
 
 The `.claude/skills/` directory contains automation skills for Claude Code:
