@@ -10,3 +10,6 @@ node_modules/
 
 # Logs
 *.log
+
+# Sensitive client information
+context/RyderGyde/
