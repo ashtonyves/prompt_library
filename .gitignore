@@ -13,3 +13,7 @@ node_modules/
 
 # Sensitive client information
 context/RyderGyde/
+
+# Local skill files
+.claude/skills/emil-design-eng
+.claude/skills/emil-design-eng.md
