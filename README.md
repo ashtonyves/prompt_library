@@ -17,7 +17,17 @@ study-plans/           # Learning resources
 .claude/skills/        # Claude Code skills for automation
 ```
 
-## Prompts
+## Prompt Collections
+
+These three files are the canonical, growing collections — each holds many prompts grouped by category. New prompts are appended here via the `/save-prompt` skill.
+
+| Collection | Topics |
+|------------|--------|
+| [Problem Framing Prompts](prompts/01%20planning/problem-framing-prompts.md) | Project planning, PRD creation, business analysis, problem framing, product thinking |
+| [Design Prompts](prompts/02%20design/design-prompts.md) | Product design, design engineering, design critique, visual design, UI/UX |
+| [Implementation Prompts](prompts/03%20coding/implementation-prompts.md) | Coding, implementation, code review, debugging, context management, learning code |
+
+## Standalone Prompts
 
 ### Planning
 
@@ -37,7 +47,6 @@ study-plans/           # Learning resources
 
 | Prompt | Description |
 |--------|-------------|
-| [Prompting Patterns](prompts/03%20coding/prompting-patterns.md) | Quick reference for effective AI coding patterns |
 | [Component Implementation](prompts/03%20coding/component-implementation-prompt.md) | Implement Figma components using MCP with token mapping |
 | [Compare Figma to Codebase](prompts/03%20coding/compare-figma-to-codebase.md) | Sync Figma designs with existing code implementations |
 
