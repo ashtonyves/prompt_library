@@ -16,6 +16,8 @@ Currently registered collections:
 | Topic | File |
 |---|---|
 | Product design, design engineering, design critique, visual design, UI/UX | `/Users/ashton/dev/prompt_library/prompts/02 design/design-prompts.md` |
+| Project planning, PRD creation, business analysis, problem framing, product thinking | `/Users/ashton/dev/prompt_library/prompts/01 planning/problem-framing-prompts.md` |
+| Coding, implementation, code review, debugging, context management, learning code | `/Users/ashton/dev/prompt_library/prompts/03 coding/implementation-prompts.md` |
 
 When the user creates a new collection file in the future and wants this skill to know about it, they will say something like "the skill should also know about X.md" — append a new row to the table above. Until a file appears in this table, do not write to it.
 
@@ -62,7 +64,7 @@ Use exactly this structure (where `\`\`\`` is a real triple-backtick fence):
 
 [1–2 sentences: what it does, when to use it.]
 
-*Source: [Author / Where] — [URL if applicable]*
+*Source: [Display name](URL)*
 
 ---
 ```
@@ -70,6 +72,11 @@ Use exactly this structure (where `\`\`\`` is a real triple-backtick fence):
 Rules:
 
 - The fenced code block must contain *only* the prompt text, with no trailing blank line inside the fence — keeps copy-paste clean.
+- The source line uses an inline markdown link so the URL is hidden behind a short display name. Pick the display name in this order:
+  1. The author's name if identifiable (e.g. `Rob Boyett`, `Brian Lovin`).
+  2. Otherwise the publication or site name (e.g. `Notion`, `YouTube`).
+  3. Otherwise the domain (e.g. `github.com`).
+- If no URL is available but a name is, write `*Source: [Display name]*` (no link).
 - Omit the `*Source: ...*` line entirely if no source was given. Do not write "Source: unknown".
 - Always end the entry with a `---` separator on its own line, followed by a blank line.
 
