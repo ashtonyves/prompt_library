@@ -42,6 +42,15 @@ I know this duplicates some code from [other file]. That's intentional—I'd rat
 
 ---
 
+**Build vanilla demo from slide:**
+```
+I want you to create a simple website that shows [all of the concepts demonstrated on this slide.] I want this to be a vanilla HTML, CSS, and JavaScript website.
+```
+
+Turns a slide’s concepts into a small, runnable demo site with no frameworks. Use when you have a deck or screenshot and want a hands-on reference you can open in a browser.
+
+---
+
 ## Learning Prompts
 
 **Understand the code:**
@@ -160,6 +169,28 @@ I'm stuck on [problem]. Let me explain what I've tried, and help me think throug
 ```
 
 *Source: [xaelophone / how-i-code](https://github.com/xaelophone/how-i-code/blob/main/cheatsheets/prompting-patterns.md)*
+
+---
+
+## Backend Implementation Prompts
+
+**Set up a database schema:**
+
+```
+Set up a database schema for [user information].
+```
+
+Generates a starter schema for a given domain entity. Use when scaffolding the data layer for a new feature and you want a working baseline to refine.
+
+---
+
+**Build an API endpoint:**
+
+```
+Develop an API endpoint to retrieve [user data].
+```
+
+Scaffolds a read endpoint for a specified resource. Use when you need a quick starting point for an API route that can then be hardened with validation, auth, and error handling.
 
 ---
 

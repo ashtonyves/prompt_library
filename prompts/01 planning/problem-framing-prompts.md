@@ -129,3 +129,15 @@ Break this plan into atomic chunks. Each chunk should be:
 Post each chunk as a GitHub Issue.
 ```
 
+---
+
+**Learn while building:**
+
+```
+My goal is to make something but also to learn. Please look out for opportunities that you can use to grow my understanding as someone who is not that technical.
+```
+
+Use at the start of a session when you want the assistant to teach as it works — flagging concepts, choices, and patterns along the way for a less-technical user.
+
+---
+
