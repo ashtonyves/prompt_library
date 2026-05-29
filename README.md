@@ -78,6 +78,7 @@ The `.claude/commands/` directory contains slash commands for Claude Code:
 
 The `.claude/skills/` directory contains automation skills for Claude Code:
 
+- **save-prompt** - Format and append a new prompt to the appropriate collection file in `prompts/`
 - **notion-meeting-intelligence** - Prepare meeting materials with Notion integration
 - **notion-research-documentation** - Create research docs from Notion workspace
 - **notion-knowledge-capture** - Transform conversations into structured documentation
