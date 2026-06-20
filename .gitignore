@@ -17,3 +17,24 @@ context/RyderGyde/
 # Local skill files
 .claude/skills/emil-design-eng
 .claude/skills/emil-design-eng.md
+
+# Skills from other people that I don't want re-hosted on github
+.claude/skills/thumb-first
+.claude/skills/thumb-first-design
+.claude/skills/thumb-first-platform
+
+.claude/skills/skill-distillery
+.claude/skills/find-skills
+.claude/skills/source-command-summarize-work-skill
+
+.claude/skills/notion-meeting-intelligence
+.claude/skills/notion-research-documentation
+.claude/skills/notion-knowledge-capture
+.claude/skills/notion-spec-to-implementation
+
+.claude/skills/skill-creator
+
+.claude/skills/skill-picker-main
+
+.claude/skills/agentation
+.claude/skills/agentation-self-driving
