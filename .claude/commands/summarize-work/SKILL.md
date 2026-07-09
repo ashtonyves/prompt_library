@@ -36,16 +36,18 @@ Generate a summary of what was implemented in the current conversation session, 
 - [Key insights, gotchas, or discoveries from the session]
 ```
 
-4. Present the formatted comment to the user for review before posting.
+4. If a GitHub Issue number is known (referenced in the conversation or passed as an argument), ALWAYS post the comment automatically — do not wait for confirmation. Use the correct repo with `--repo <owner>/<repo>` when the issue lives outside the current repo:
+   ```
+   gh issue comment <number> --repo <owner>/<repo> --body "<summary>"
+   ```
+   Then report the posted comment URL back to the user.
 
-5. If the user confirms and a GitHub Issue number is known, post the comment using:
-   ```
-   gh issue comment <number> --body "<summary>"
-   ```
+5. Only present the summary for review (instead of posting) when NO issue number is known.
 
 ## Important
 
 - Do NOT close the GitHub Issue — only add a comment.
+- When an issue number is known, always post — never ask first.
 - If no issue number is available, ask the user which issue to comment on, or just display the summary for them to copy.
 - Keep bullet points concise but specific — reference file names, component names, and concrete changes.
 - If the user provides an issue number as an argument (e.g., `/summarizework 42`), use that issue number.
