@@ -13,6 +13,9 @@ node_modules/
 
 # Sensitive client information
 context/RyderGyde/
+prompts/rg
+
+.agents
 
 
 # Skills from other people that I don't want re-hosted on github
@@ -65,4 +68,3 @@ context/RyderGyde/
 
 .claude/skills/prototype-to-figma-skill-main
 
-prompts/rg

@@ -1,5 +1,5 @@
 ---
-name: notion-recipe-capture
+name: recipe-capture
 description: Extracts recipes from photos of cookbook pages and saves them to the Notion Recipes database. Use when the user shares 1-2 photos of a recipe (from a cookbook, magazine, or handwritten) and wants it filed in Notion. Also use when the user says "add this recipe", "save this recipe", shares recipe photos, or points to a folder of recipe photos for batch processing.
 ---
 
