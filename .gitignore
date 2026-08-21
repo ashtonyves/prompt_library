@@ -15,7 +15,7 @@ node_modules/
 context/RyderGyde/
 prompts/rg
 
-.agents
+.agents/skills
 
 
 # Skills from other people that I don't want re-hosted on github
