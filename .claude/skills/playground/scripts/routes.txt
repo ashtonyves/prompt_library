@@ -1,0 +1,5 @@
+# One "slug|path" per line. The slug becomes <slug>.png in the shots directory.
+# Query params are fine — give each variant its own slug.
+# Replace these with the host app's real routes.
+home|/
+about|/about

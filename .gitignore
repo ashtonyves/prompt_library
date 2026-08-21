@@ -14,11 +14,31 @@ node_modules/
 # Sensitive client information
 context/RyderGyde/
 
-# Local skill files
-.claude/skills/emil-design-eng
-.claude/skills/emil-design-eng.md
 
 # Skills from other people that I don't want re-hosted on github
+#From Emil: https://github.com/emilkowalski/skills
+.claude/skills/emil-design-eng
+.claude/skills/emil-design-eng.md
+.claude/skills/find-animation-opportunities
+.claude/skills/improve-animations
+.claude/skills/review-animations
+.claude/skills/animation-vocabulary
+.claude/skills/apple-design
+.claude/skills/animate
+.claude/skills/animation-accessibility
+.claude/skills/animation-performance
+.claude/skills/css-animations
+.claude/skills/motion-brief
+.claude/skills/motion-react
+.claude/skills/pick-ui-library
+.claude/skills/prototype
+
+.claude/skills/design-taste-frontend
+
+.claude/skills/caveman-commit
+
+.claude/skills/web-design-guidelines
+
 .claude/skills/thumb-first
 .claude/skills/thumb-first-design
 .claude/skills/thumb-first-platform

@@ -1,111 +1,145 @@
 ---
 name: playground
-description: "Spin up visual UI prototypes fast, each at /playground/NAME, navigable from a collapsible left-nav. Auto-detects whether it's inside an existing web app (adds a route there) or a non-app environment (scaffolds a dedicated portable Vite + React + Tailwind playground). Use when the user wants to quickly prototype an idea, mock up a screen, sketch a UI variation, or says 'make a playground page', 'prototype this', 'new playground', or '/playground'. Triggers on: playground, prototype, mock up, sketch a UI, quick prototype, scaffold a prototype, /playground/NAME."
-argument-hint: "[page-name] [one-line idea]"
-allowed-tools: Read, Write, Edit, Glob, Grep, Bash
+description: "Build an internal design-exploration workspace in a web app: a /playground route directory listing every page as a screenshot card (with title, path, and last-modified date), plus per-component variation labs for comparing design alternatives side by side against a live production baseline. Includes a headless-Chrome screenshot capture script, a sticky table of contents with scroll-spy, cards/list view toggle, and grouped sections that visually separate internal tooling from shipped product pages. Use when the user wants to explore design ideas or variations, compare design alternatives, redesign an existing component, needs an index or directory of all routes/pages in an app, wants screenshots of every page, or says 'playground', 'design exploration', 'variations', 'try some options', 'explore ideas for this', 'lab page', or 'show me all the pages'."
 ---
 
 # Playground
 
-Spin up visual prototypes fast. Each prototype lives at `/playground/NAME` and is reachable from a collapsible left-nav. The skill's job is to remove the friction between "I have an idea" and "I'm looking at it in a browser" — scaffold immediately, then iterate.
+An internal workspace for exploring design ideas inside a real app. Two pieces:
 
-**Core insight:** A playground is a *registry of pages*, not a pile of files. Every prototype self-registers in one manifest so the nav and the routes never drift apart. Adding a page is appending one entry.
+1. **`/playground`** — a directory of every route, as screenshot cards. Makes the
+   app's surface area visible and gives every experiment a home you can find later.
+2. **A variations lab** per component under exploration (e.g. `/diagram-lab`) —
+   alternatives stacked against identical content, with the current production
+   version as variation 01.
 
-## Quick Start
+**Core insight:** design exploration needs a *live baseline in the same viewport*.
+Comparing a new concept against a remembered one is guesswork. Everything here
+exists to put the real current component next to the alternatives.
 
-**Make a new prototype (adaptive — the default):**
-> `/playground card-grid` — "a dark grid of cards with a floating add button"
-> `/playground` — (asks for a name + one-line idea, then builds)
+Both are internal: `noindex, nofollow`, never linked from site nav, and nothing
+is wired into production until a winner is picked.
 
-**Iterate an existing prototype:**
-> "make the cards in /playground/card-grid bigger and add a hover state"
+## Workflow
 
-The skill asks for only two things — a **page name** and a **one-line idea** — then scaffolds and shows you the result. Everything else it infers; you refine after.
+### 1. Survey the routes
 
----
+Find every route and its title. Don't guess paths — read them.
 
-## Core Principles
-
-These apply to ALL modes:
-
-1. **Scaffold first, refine after** — Don't interrogate. Get something on screen from name + one line, then iterate with the user. Speed is the whole point.
-
-2. **The manifest is the source of truth** — Pages register in one routes manifest. The nav is *generated from* that manifest, never hand-maintained in parallel. Add a page = add a manifest entry + a page file. Never edit the nav list directly.
-
-3. **Minimal chrome, maximal canvas** — The shell is just a collapsible left-nav + a content area in neutral dark mode. The prototype owns its own look. Don't impose a design system on the page content.
-
-4. **Respect the host** — Inside an existing app, detect its framework and conventions and fit in. Confirm the route path before writing. Never reformat or restructure the host app to suit the playground.
-
-5. **Portable when standalone** — In a non-app environment, the scaffold is self-contained (Vite + React + Tailwind) and runnable with `npm install && npm run dev`. No assumptions about the surrounding repo.
-
-6. **URL-safe names** — A page name becomes a URL segment and an identifier. Slugify it (lowercase, hyphens) for the route; keep a human label for the nav. Never put a raw, unslugified name in a path.
-
----
-
-## Entry Point Detection
-
-First **detect the environment**, then route. Detection drives everything.
-
-```
-Is there a package.json with a web framework (next / vite / react-scripts / @remix-run)?
-├── No package.json, or no web framework
-│   ├── Does a playground already exist here (playground/ dir with its own package.json)?
-│   │   ├── No  → workflows/scaffold-new-playground.md   (create the portable app + first page)
-│   │   └── Yes → workflows/add-page-to-playground.md    (just add a page to it)
-└── Yes — we're inside an existing web app
-    └── workflows/add-page-existing-app.md               (detect framework, confirm path, add route + manifest entry)
+```bash
+grep -rn "createFileRoute\|createBrowserRouter\|<Route " src/ | head -40
 ```
 
-Run this to detect quickly (from the directory the user is working in):
+Then for each route file, pull the page `title` from its head/meta block.
 
-- Look for `package.json` at the repo root and in obvious app subdirs.
-- Grep its `dependencies` for `next`, `vite`, `react-scripts`, `@remix-run`.
-- Look for an existing `playground/` directory containing its own `package.json` (a previously-scaffolded portable playground).
+Handle two special cases:
 
-| Situation | Route To |
-|-----------|----------|
-| No framework found, no existing playground | `workflows/scaffold-new-playground.md` |
-| No framework found, playground already scaffolded | `workflows/add-page-to-playground.md` |
-| Inside an existing web app (Next/Vite/CRA/Remix) | `workflows/add-page-existing-app.md` |
-| Ambiguous (e.g. multiple apps, monorepo) | Ask which target, then route |
+- **Dynamic routes** (`/case/$token`, `/user/:id`) — grep for a demo fixture
+  (`DEMO_TOKEN`, `demo`, `fixture`). One often exists and makes the route
+  linkable (e.g. `/case/demo`), sometimes with query-param variants
+  (`?role=dispatcher`, `?state=closed`) worth listing as separate entries.
+- **Auth-gated routes** — they'll screenshot as a login screen. Mark them.
 
-**After selecting a workflow, read it and follow it exactly.**
+### 2. Build the directory page
 
----
+Copy `assets/playground-page.tsx` into the host's routes directory and adapt:
+the route-definition idiom, the header component, and the `ENTRIES` array.
 
-## Adaptive Intake
+`ENTRIES` is the single source of truth. `GROUP_ORDER`, the TOC, section counts,
+and anchors all derive from it — adding a route is appending one entry.
 
-Every mode starts the same minimal way. Don't expand this into a questionnaire.
+Grouping guidance:
 
-1. **Get the page name.** From `$ARGUMENTS[0]` if provided; otherwise ask: *"What should this prototype be called?"* Slugify for the route, keep the original as the nav label.
-2. **Get the one-line idea.** From the rest of `$ARGUMENTS` if provided; otherwise ask: *"One line — what's the idea?"*
-3. **Scaffold immediately.** Build the page from those two inputs. Make reasonable design choices; don't ask about colors, layout, or libraries up front.
-4. **Then iterate.** Show what you built and invite refinement.
+- Group by **role in the product**, not by directory. Marketing / Case views /
+  Agent console reads better than a mirror of `src/routes/`.
+- Put the **design sandboxes group first** — that's what's actively being worked
+  in. It renders inside a dashed, tinted container with an "Internal" pill,
+  because sandboxes are tooling, not product.
+- Entry points belong with what they produce (an intake flow that creates a case
+  belongs with the case views, not with marketing).
 
-If both name and idea are already in `$ARGUMENTS`, ask nothing — go straight to scaffolding.
+### 3. Capture screenshots
 
----
+Copy `scripts/capture-shots.sh` into the host's `scripts/`, and write a
+`routes.txt` beside it with one `slug|path` per line:
 
-## Reference Index
+```
+home|/
+about|/about
+case-driver|/case/demo
+case-dispatcher|/case/demo?role=dispatcher
+```
 
-All domain knowledge in `references/`:
+Run it with the dev server up:
 
-| File | Contents | Load When |
-|------|----------|-----------|
-| [nav-registration.md](references/nav-registration.md) | The manifest contract — how a page self-registers, how the nav is generated, how slugs map to routes | **Always** (every mode touches the manifest) |
-| [framework-detection.md](references/framework-detection.md) | Detecting Next/Vite/CRA/Remix and where routes + nav live in each | Existing-app mode only |
+```bash
+bash scripts/capture-shots.sh
+```
 
-## Workflow Index
+It finds Chrome across platforms, writes `public/playground-shots/*.png`, and
+emits `mtimes.json` for the "last modified" dates. No new dependencies — no
+Playwright or Puppeteer install.
 
-| Workflow | Purpose |
-|----------|---------|
-| [scaffold-new-playground.md](workflows/scaffold-new-playground.md) | Non-app environment → create the portable Vite + React + Tailwind playground and its first page |
-| [add-page-to-playground.md](workflows/add-page-to-playground.md) | Playground already exists → add a page and register it |
-| [add-page-existing-app.md](workflows/add-page-existing-app.md) | Inside an existing app → detect framework, confirm route path, add the route + manifest entry |
+Re-run after meaningful UI changes; captures are static and go stale silently.
 
-## Templates
+### 4. Build a variations lab
 
-| Template | Use When |
-|----------|----------|
-| [templates/vite-playground/](templates/vite-playground/) | The full portable scaffold — copied wholesale when creating a new playground |
-| [templates/prototype-page.tsx](templates/prototype-page.tsx) | The blank prototype page stub — the starting point for every new page in every mode |
+Copy `assets/variations-lab.tsx`, named for what's being explored
+(`diagram-lab.tsx`, `nav-lab.tsx`). Add it to `ENTRIES` under the sandboxes group.
+
+Rules that make it work:
+
+- **Variation 01 is always the unmodified production component.** Non-negotiable.
+- Give each variation a **name and a one-line rationale** ("Radial. Most iconic
+  at a glance.") so the tradeoff under test is legible.
+- Export variants as siblings from the same component file, so they share the
+  real design tokens instead of drifting into invented styles.
+- Keep the width switcher and baseline-grid overlay — but see the breakpoint
+  caveat in `references/gotchas.md`.
+
+### 5. Verify in a browser
+
+Load the pages and confirm: thumbnails resolve, TOC anchors hit real ids, the
+view toggle switches, and the scroll-spy tracks. Check mobile too — the TOC is a
+sticky chip rail there.
+
+Assert against the live DOM rather than the console. **Read
+`references/gotchas.md` before debugging anything scroll-related** — automated
+browser panes produce several convincing false failures.
+
+## What the directory page includes
+
+Already built into the template:
+
+- **Screenshot cards** — thumbnail, title, path, note, last-modified date
+- **Cards / List toggle** — persisted in `localStorage`; list view is a dense
+  one-line-per-route scan
+- **Sticky TOC** — sidebar on desktop, horizontally-scrollable chip rail pinned
+  under the header on mobile; active section highlights while scrolling
+- **Grouped sections** with per-group counts
+- **Sandbox container** — dashed border, tint, "Internal" pill
+- **New-tab links** — every route opens in its own tab, so the directory stays put
+- **Honest empty states** — "Gated" badges, "No capture" placeholders,
+  "Modified unknown" instead of invented dates
+
+## Non-obvious details
+
+`references/gotchas.md` covers the things that cost real debugging time. Read it
+before implementing the scroll-spy or verifying scroll behavior. Highlights:
+
+- Scroll-spy: use scroll position, **not** IntersectionObserver
+- `target="_blank"` needs a plain `<a>`, not a router `Link`
+- `scroll-behavior` must be on `html`, not a wrapper div
+- Don't read `localStorage` during initial render (SSR hydration)
+- Don't use a server function for file mtimes — write JSON from the capture script
+- Never display an mtime you know is bogus (`1979` epochs) — say "unknown"
+- The width switcher tests reflow, **not** breakpoints
+
+## Honesty rules
+
+This workspace is a decision-making tool, so it must not overstate what it shows:
+
+- A gated route's thumbnail shows the **login screen** — label it as such.
+- An unrecoverable date is **"Modified unknown"**, never a plausible-looking guess.
+- A screenshot is a **static capture**, not a live render — say when it may be stale.
+- The width switcher tests **content reflow**, not responsive breakpoints.
